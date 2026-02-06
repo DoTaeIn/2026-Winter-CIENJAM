@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using System.Collections.Generic; // 리스트 사용을 위해 필수
 
 public class MapGenerator : MonoBehaviour
 {
@@ -19,26 +20,31 @@ public class MapGenerator : MonoBehaviour
     [SerializeField] private Tilemap backTilemap;
     [SerializeField] private int minHorizontalMove = 3;
     
-    //Testing
-    [SerializeField] private GameObject testTile;
+    [Header("Monster Settings")]
+    [SerializeField] private GameObject monsterPrefab;
+    [SerializeField] private int monsterCount = 5;
+    [SerializeField] private Transform monsterParent;
     
-    [Header("Player Settings")] //Remove when done testing
+    private List<Vector3> validSpawnPoints = new List<Vector3>();
+
+    [Header("Chest Settings")]
+    public GameObject chestPrefab;
+    public List<GameObject> chestItems;
+    public int chestCount = 3;
+    
+    [Header("Player Settings")] 
     [SerializeField] private int minY = 5;
     [SerializeField] private int maxY = 7;
     [SerializeField] private int maxX = 6;
 
-
     void Start()
     {
-        //GenerateTower();
         Generate();
     }
     
-    
-    
     public void Generate()
     {
-        tilemap.ClearAllTiles();
+        MapTotalReset();
         
         Vector3Int currentPos = new Vector3Int(0, startY, 0);
 
@@ -48,14 +54,8 @@ public class MapGenerator : MonoBehaviour
             currentPos.y -= drop;
             
             int moveDistance;
-            if (currentPos.x < -3) 
-            {
-                moveDistance = Random.Range(minPlatformX, maxPlatformX);
-            }
-            else if (currentPos.x > 3) 
-            {
-                moveDistance = Random.Range(-maxX, -minHorizontalMove);
-            }
+            if (currentPos.x < -3) moveDistance = Random.Range(minPlatformX, maxPlatformX);
+            else if (currentPos.x > 3) moveDistance = Random.Range(-maxX, -minHorizontalMove);
             else 
             {
                 moveDistance = Random.Range(minHorizontalMove, maxX);
@@ -63,19 +63,50 @@ public class MapGenerator : MonoBehaviour
             }
 
             currentPos.x += moveDistance;
-            
             currentPos.x = Mathf.Clamp(currentPos.x, -8, 8);
-
 
             int width = Random.Range(minPlatformX, maxPlatformX);
             int height = Random.Range(1, maxPlatformY);
             
             DrawThickPlatform(currentPos, width, height);
+
+            Vector3 spawnPos = tilemap.GetCellCenterWorld(currentPos) + Vector3.up; 
+            validSpawnPoints.Add(spawnPos);
         }
 
         DrawBorders(10, -(mapHeight));
         DrawBackground(mapWidth, mapHeight);
+        
+        SpawnMonsters();
     }
+    
+    void SpawnMonsters()
+    {
+        if (validSpawnPoints.Count == 0) return;
+
+        int spawnLimit = Mathf.Min(monsterCount, validSpawnPoints.Count);
+
+        for (int i = 0; i < spawnLimit - chestCount; i++)
+        {
+            int randomIndex = Random.Range(0, validSpawnPoints.Count);
+            
+            Vector3 spawnPos = validSpawnPoints[randomIndex];
+            
+            if (monsterPrefab != null)
+            {
+                Instantiate(monsterPrefab, spawnPos, Quaternion.identity, monsterParent);
+            }
+            
+            validSpawnPoints.RemoveAt(randomIndex);
+        }
+
+        for (int i = 0; i < chestCount; i++)
+        {
+            Vector3 spawnPos = validSpawnPoints[i];
+            if (chestPrefab != null) Instantiate(chestPrefab, spawnPos, Quaternion.identity);
+        }
+    }
+
     void DrawThickPlatform(Vector3Int topCenterPos, int width, int height)
     {
         int halfWidth = width / 2;
@@ -89,6 +120,7 @@ public class MapGenerator : MonoBehaviour
             }
         }
     }
+
     void DrawBorders(int topY, int bottomY)
     {
         wallTilemap.ClearAllTiles();
@@ -104,7 +136,7 @@ public class MapGenerator : MonoBehaviour
         
         for (int y = topY; y >= bottomY; y--)
         {
-            for (int t = 0; t < 2; t++) // 벽 두께만큼 반복
+            for (int t = 0; t < 2; t++) 
             {
                 wallTilemap.SetTile(new Vector3Int(-wallBorder - t, y, 0), ruleTile);
                 wallTilemap.SetTile(new Vector3Int(wallBorder + t, y, 0), ruleTile);
@@ -119,16 +151,17 @@ public class MapGenerator : MonoBehaviour
             }
         }
     }
+
     void DrawBackground(int width, int height)
     {
         int halfWidth = width / 2;
-
+        
         for (int i = 0; i < width; i++)
         {
-            for (int j = 0; j < height+10; j++)
+            for (int j = 0; j < height + 10; j++)
             {
                 int x = i - halfWidth;
-                int y = j - height;
+                int y = 10 - j;
 
                 Vector3Int tilePos = new Vector3Int(x, y, 0);
                 backTilemap.SetTile(tilePos, wallTile);
@@ -136,11 +169,19 @@ public class MapGenerator : MonoBehaviour
         }
     }
 
-
     public void MapTotalReset()
     {
         tilemap.ClearAllTiles();
         wallTilemap.ClearAllTiles();
         backTilemap.ClearAllTiles();
+        
+        validSpawnPoints.Clear();
+        if (monsterParent != null)
+        {
+            foreach (Transform child in monsterParent)
+            {
+                Destroy(child.gameObject);
+            }
+        }
     }
 }
