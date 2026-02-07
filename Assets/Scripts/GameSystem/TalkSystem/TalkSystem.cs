@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,6 +16,8 @@ public class TalkSystem : MonoBehaviour
     private Queue<DialogueLine> sentences = new Queue<DialogueLine>();
     
     public static TalkSystem instance;
+    
+    private Action onDialogueEndCallback;
 
     private void Awake()
     {
@@ -26,23 +28,11 @@ public class TalkSystem : MonoBehaviour
 
     }
 
-    public void StartDialogue(DialogueData data)
-    {
-        sentences.Clear();
-        
-        foreach (DialogueLine line in data.lines)
-        {
-            sentences.Enqueue(line);
-        }
-
-        DisplayNextSentence();
-    }
-
     public void DisplayNextSentence()
     {
         if (sentences.Count == 0)
         {
-            return;
+            EndDialogue();
         }
         
         DialogueLine currentLine = sentences.Dequeue();
@@ -52,6 +42,22 @@ public class TalkSystem : MonoBehaviour
         
         if(currentLine.npc.pfp != null)
             portraitImage.sprite = currentLine.npc.pfp;
+    }
+    
+    public void StartDialogue(DialogueData data, Action onEnd = null)
+    {
+        onDialogueEndCallback = onEnd; // 할 일 저장
+        
+        UIManager.instance.TogglePanel("Talk");
+        DisplayNextSentence();
+    }
+
+    private void EndDialogue()
+    {
+        UIManager.instance.TogglePanel("Talk");
+        
+        onDialogueEndCallback?.Invoke();
+        onDialogueEndCallback = null;
     }
     
 }

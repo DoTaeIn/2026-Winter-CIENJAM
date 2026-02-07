@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af2b1dc774e2ed44894c512ae1583af9, type: 3}
-  m_Name: ShopKeeper
+  m_Name: Mechanic
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   id: 0
-  name: "\u300E\uB545\uC5D0\uC11C \uAC00\uAE4C\uC6B4\uC790\u300F \uBC15\uCC3D\uC724"
-  pfp: {fileID: -5230219056740021480, guid: 456e1d33fc7160f4b983aa47e079ba14, type: 3}
+  name: "\u300E\uC0AC\uACFC\uB97C \uBA39\uB294\uC790\u300F \uC774\uC7AC\uC6A9 "
+  pfp: {fileID: 7743483894556535331, guid: e8ebc91c3eaaa1642a77ec516bf30bcb, type: 3}
