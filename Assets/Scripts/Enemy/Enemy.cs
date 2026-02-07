@@ -6,13 +6,25 @@ public class Enemy : MonoBehaviour
 {
     [Header("Enemy Settings")] 
     [SerializeField] private int gold = 10;
-    [SerializeField] private float hp = 10;
+    [SerializeField] private float currHp = 10;
+    [SerializeField] private float maxHp = 10;
     [SerializeField] private float damage = 10;
     
     public float moveSpeed = 2f;
     public float idleTime = 2f;
     public LayerMask groundLayer;
     public LayerMask playerLayer;
+    
+    [Header("Attack Settings")]
+    public float attackRange = 1.5f;
+    public float attackDamage = 10f;
+    public float attackCooldown = 2f;
+    public float attackWindup = 0.5f;
+    public float attackDuration = 1.0f;
+
+    [Header("Attack Area")]
+    public Transform attackPoint;       // 공격 판정 위치 (무기 끝 등)
+    public float attackRadius = 0.5f;   // 공격 판정 크기
 
     [Header("Sensors")]
     public Transform frontCheck;
@@ -23,12 +35,16 @@ public class Enemy : MonoBehaviour
     public IdleState idleState;
     public PatrolState patrolState;
     public ChaseState chaseState;
+    public AttackState attackState;
+    public HitState hitState;
     
     [HideInInspector] public Rigidbody2D rb;
     [HideInInspector] public Transform target;
     [HideInInspector] public int facingDir = 1;
 
     private UnityEvent onDeathEvent = new UnityEvent();
+    
+    [HideInInspector] public float lastAttackTime;
 
     private void Awake()
     {
@@ -37,7 +53,9 @@ public class Enemy : MonoBehaviour
         idleState = new IdleState(this);
         patrolState = new PatrolState(this);
         chaseState = new ChaseState(this);
-    
+        attackState = new AttackState(this);
+        hitState = new HitState(this);
+        
         ChangeState(idleState);
         
     }
@@ -48,7 +66,8 @@ public class Enemy : MonoBehaviour
     
     public void SetEnemyStats(float hp, float damage)
     {
-        this.hp = hp;
+        this.currHp = hp;
+        this.maxHp = hp;
         this.damage = damage;
     }
 
@@ -101,6 +120,32 @@ public class Enemy : MonoBehaviour
             return true;
         }
         return false;
+    }
+    
+    public void PerformAttack()
+    {
+
+        Collider2D hitPlayer = Physics2D.OverlapCircle(attackPoint.position, attackRadius, playerLayer);
+
+        if (hitPlayer != null)
+        {
+
+        }
+    }
+    
+    public void TakeDamage(float damage)
+    {
+
+        currHp -= damage;
+        
+        if (currHp <= 0)
+        {
+            return;
+        }
+        
+        ChangeState(hitState);
+        
+        // StartCoroutine(KnockBack()); 
     }
 
     private void OnDeath()
