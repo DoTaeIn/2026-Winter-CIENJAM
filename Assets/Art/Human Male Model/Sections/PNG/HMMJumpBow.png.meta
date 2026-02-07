@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: c5b78217942918a4f8f404a165ae018d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6914206500974942408
+    second: HMMJumpBow_0
+  - first:
+      213: 6552398007979654839
+    second: HMMJumpBow_1
+  - first:
+      213: 1602786041561854021
+    second: HMMJumpBow_2
+  - first:
+      213: -3146079029651929818
+    second: HMMJumpBow_3
+  - first:
+      213: 386214140666574030
+    second: HMMJumpBow_4
+  - first:
+      213: 8758317103585922346
+    second: HMMJumpBow_5
+  - first:
+      213: 1150694892820976866
+    second: HMMJumpBow_6
+  - first:
+      213: 3116048569592306311
+    second: HMMJumpBow_7
+  - first:
+      213: 8028106704641412034
+    second: HMMJumpBow_8
+  - first:
+      213: 7483739024635740353
+    second: HMMJumpBow_9
+  - first:
+      213: -4614507733900496914
+    second: HMMJumpBow_10
+  - first:
+      213: 5386482440772602853
+    second: HMMJumpBow_11
+  - first:
+      213: -8729691721436289043
+    second: HMMJumpBow_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HMMJumpBow_0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 7
+        width: 122
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83721b502ddcb00a0800000000000000
+      internalID: -6914206500974942408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBow_1
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 7
+        width: 106
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7beba9ca54bceea50800000000000000
+      internalID: 6552398007979654839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBow_2
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 7
+        width: 106
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 540bf32b96d3e3610800000000000000
+      internalID: 1602786041561854021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBow_3
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 7
+        width: 130
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6258a4a8ac1e654d0800000000000000
+      internalID: -3146079029651929818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBow_4
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 7
+        width: 114
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4f9a5f6bb1c5500800000000000000
+      internalID: 386214140666574030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBow_5
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 7
+        width: 122
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2d877d800bcb8970800000000000000
+      internalID: 8758317103585922346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBow_6
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 7
+        width: 146
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4537b88e618ff00800000000000000
+      internalID: 1150694892820976866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBow_7
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 7
+        width: 154
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78ad96d1aad6e3b20800000000000000
+      internalID: 3116048569592306311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBow_8
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 7
+        width: 162
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb451d5380996f60800000000000000
+      internalID: 8028106704641412034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBow_9
+      rect:
+        serializedVersion: 2
+        x: 2327
+        y: 7
+        width: 162
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c0442b0ef49bd760800000000000000
+      internalID: 7483739024635740353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBow_10
+      rect:
+        serializedVersion: 2
+        x: 2615
+        y: 7
+        width: 122
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef619b2aa9f5ffb0800000000000000
+      internalID: -4614507733900496914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBow_11
+      rect:
+        serializedVersion: 2
+        x: 2879
+        y: 7
+        width: 122
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eb4127bd31a0ca40800000000000000
+      internalID: 5386482440772602853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBow_12
+      rect:
+        serializedVersion: 2
+        x: 3143
+        y: 7
+        width: 146
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de72f1991a7e9d680800000000000000
+      internalID: -8729691721436289043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HMMJumpBow_0: -6914206500974942408
+      HMMJumpBow_1: 6552398007979654839
+      HMMJumpBow_10: -4614507733900496914
+      HMMJumpBow_11: 5386482440772602853
+      HMMJumpBow_12: -8729691721436289043
+      HMMJumpBow_2: 1602786041561854021
+      HMMJumpBow_3: -3146079029651929818
+      HMMJumpBow_4: 386214140666574030
+      HMMJumpBow_5: 8758317103585922346
+      HMMJumpBow_6: 1150694892820976866
+      HMMJumpBow_7: 3116048569592306311
+      HMMJumpBow_8: 8028106704641412034
+      HMMJumpBow_9: 7483739024635740353
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

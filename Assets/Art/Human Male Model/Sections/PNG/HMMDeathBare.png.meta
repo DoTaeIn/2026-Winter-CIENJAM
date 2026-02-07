@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: aa40fa51c640f3748bc4fd11547078d1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7810716167500716653
+    second: HMMDeathBare_0
+  - first:
+      213: -5365787433905745073
+    second: HMMDeathBare_1
+  - first:
+      213: -3592100331621829881
+    second: HMMDeathBare_2
+  - first:
+      213: 5786249970179064200
+    second: HMMDeathBare_3
+  - first:
+      213: 4038543976158632886
+    second: HMMDeathBare_4
+  - first:
+      213: -1754182767375535414
+    second: HMMDeathBare_5
+  - first:
+      213: -2938403991266415883
+    second: HMMDeathBare_6
+  - first:
+      213: -9062353846970310922
+    second: HMMDeathBare_7
+  - first:
+      213: -5921142013111139235
+    second: HMMDeathBare_8
+  - first:
+      213: 3098886932702721842
+    second: HMMDeathBare_9
+  - first:
+      213: -3310279658354463126
+    second: HMMDeathBare_10
+  - first:
+      213: -9037224963023783090
+    second: HMMDeathBare_11
+  - first:
+      213: 3848027716025724108
+    second: HMMDeathBare_12
+  - first:
+      213: -6854939729468408376
+    second: HMMDeathBare_13
+  - first:
+      213: 465437205496891970
+    second: HMMDeathBare_14
+  - first:
+      213: -2766672103974557234
+    second: HMMDeathBare_15
+  - first:
+      213: -5807010522256737308
+    second: HMMDeathBare_16
+  - first:
+      213: 8172328769189687301
+    second: HMMDeathBare_17
+  - first:
+      213: -2364258319370976929
+    second: HMMDeathBare_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HMMDeathBare_0
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 7
+        width: 98
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39528b25703ca9390800000000000000
+      internalID: -7810716167500716653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBare_1
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 87
+        width: 58
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f431bcd02c4e885b0800000000000000
+      internalID: -5365787433905745073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBare_2
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 7
+        width: 82
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7033e18b7cb462ec0800000000000000
+      internalID: -3592100331621829881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBare_3
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 47
+        width: 66
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8814326e0b3ec4050800000000000000
+      internalID: 5786249970179064200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBare_4
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 7
+        width: 90
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bb9ab4695acb0830800000000000000
+      internalID: 4038543976158632886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBare_5
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 7
+        width: 90
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac2387f2114e7a7e0800000000000000
+      internalID: -1754182767375535414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBare_6
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 7
+        width: 90
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5faa9f56321b837d0800000000000000
+      internalID: -2938403991266415883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBare_7
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 7
+        width: 82
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe907ac03d0c3280800000000000000
+      internalID: -9062353846970310922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBare_8
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 7
+        width: 82
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d548edbe5b0e3dda0800000000000000
+      internalID: -5921142013111139235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBare_9
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 7
+        width: 90
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23778d62f35710b20800000000000000
+      internalID: 3098886932702721842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBare_10
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 7
+        width: 130
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ea49870368f02d0800000000000000
+      internalID: -3310279658354463126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBare_11
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 31
+        width: 74
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4bbca307c3559280800000000000000
+      internalID: -9037224963023783090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBare_12
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 7
+        width: 82
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccc229be1d0f66530800000000000000
+      internalID: 3848027716025724108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBare_13
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 7
+        width: 82
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cdb25492ac5ed0a0800000000000000
+      internalID: -6854939729468408376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBare_14
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 7
+        width: 82
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a84e22ca0957600800000000000000
+      internalID: 465437205496891970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBare_15
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 7
+        width: 82
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec92d90416eca99d0800000000000000
+      internalID: -2766672103974557234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBare_16
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 7
+        width: 82
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb7ee562ba596fa0800000000000000
+      internalID: -5807010522256737308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBare_17
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 7
+        width: 82
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 500b14b77b1f96170800000000000000
+      internalID: 8172328769189687301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBare_18
+      rect:
+        serializedVersion: 2
+        x: 2407
+        y: 7
+        width: 130
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5181acb597703fd0800000000000000
+      internalID: -2364258319370976929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HMMDeathBare_0: -7810716167500716653
+      HMMDeathBare_1: -5365787433905745073
+      HMMDeathBare_10: -3310279658354463126
+      HMMDeathBare_11: -9037224963023783090
+      HMMDeathBare_12: 3848027716025724108
+      HMMDeathBare_13: -6854939729468408376
+      HMMDeathBare_14: 465437205496891970
+      HMMDeathBare_15: -2766672103974557234
+      HMMDeathBare_16: -5807010522256737308
+      HMMDeathBare_17: 8172328769189687301
+      HMMDeathBare_18: -2364258319370976929
+      HMMDeathBare_2: -3592100331621829881
+      HMMDeathBare_3: 5786249970179064200
+      HMMDeathBare_4: 4038543976158632886
+      HMMDeathBare_5: -1754182767375535414
+      HMMDeathBare_6: -2938403991266415883
+      HMMDeathBare_7: -9062353846970310922
+      HMMDeathBare_8: -5921142013111139235
+      HMMDeathBare_9: 3098886932702721842
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

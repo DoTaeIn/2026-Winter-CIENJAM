@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: f46ea534eaad7714aa166b1788d984b2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7824701948531300131
+    second: HMMDeathBow_0
+  - first:
+      213: -4061000705582274184
+    second: HMMDeathBow_1
+  - first:
+      213: -2031711369890711012
+    second: HMMDeathBow_2
+  - first:
+      213: -7918633749167294273
+    second: HMMDeathBow_3
+  - first:
+      213: -6292276630634981859
+    second: HMMDeathBow_4
+  - first:
+      213: 3722100044205344794
+    second: HMMDeathBow_5
+  - first:
+      213: -8113764815424086212
+    second: HMMDeathBow_6
+  - first:
+      213: -4632937976579702605
+    second: HMMDeathBow_7
+  - first:
+      213: 9069842095602135937
+    second: HMMDeathBow_8
+  - first:
+      213: 228939685873549095
+    second: HMMDeathBow_9
+  - first:
+      213: 611922180811365452
+    second: HMMDeathBow_10
+  - first:
+      213: -3637102213903193948
+    second: HMMDeathBow_11
+  - first:
+      213: -8051348054814332984
+    second: HMMDeathBow_12
+  - first:
+      213: 4991490921016673520
+    second: HMMDeathBow_13
+  - first:
+      213: 5572868980687243818
+    second: HMMDeathBow_14
+  - first:
+      213: -354081324462453995
+    second: HMMDeathBow_15
+  - first:
+      213: -4572485265936957331
+    second: HMMDeathBow_16
+  - first:
+      213: -6226903819858831991
+    second: HMMDeathBow_17
+  - first:
+      213: 1055864515464361884
+    second: HMMDeathBow_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HMMDeathBow_0
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 7
+        width: 170
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 327d38317fce69c60800000000000000
+      internalID: 7824701948531300131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBow_1
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 87
+        width: 58
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8796827df5d64a7c0800000000000000
+      internalID: -4061000705582274184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBow_2
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 7
+        width: 162
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1aba870649edc3e0800000000000000
+      internalID: -2031711369890711012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBow_3
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 47
+        width: 66
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8b6725f8c5b1290800000000000000
+      internalID: -7918633749167294273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBow_4
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 7
+        width: 138
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d16928a0eb75da8a0800000000000000
+      internalID: -6292276630634981859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBow_5
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 7
+        width: 146
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a184359054e87a330800000000000000
+      internalID: 3722100044205344794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBow_6
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 7
+        width: 138
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3f959193ed166f80800000000000000
+      internalID: -8113764815424086212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBow_7
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 7
+        width: 146
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0cc87e47f74bfb0800000000000000
+      internalID: -4632937976579702605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBow_8
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 7
+        width: 154
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 183ff35f45d8edd70800000000000000
+      internalID: 9069842095602135937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBow_9
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 7
+        width: 138
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72f7b7b6e6b5d2300800000000000000
+      internalID: 228939685873549095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBow_10
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 7
+        width: 138
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c91793bfbfd7800800000000000000
+      internalID: 611922180811365452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBow_11
+      rect:
+        serializedVersion: 2
+        x: 2407
+        y: 7
+        width: 153
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a863808eca668dc0800000000000000
+      internalID: -3637102213903193948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBow_12
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 31
+        width: 74
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c762cd1a9dd34090800000000000000
+      internalID: -8051348054814332984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBow_13
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 7
+        width: 82
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f449ceeb86554540800000000000000
+      internalID: 4991490921016673520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBow_14
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 7
+        width: 82
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2a08a5cfcec65d40800000000000000
+      internalID: 5572868980687243818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBow_15
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 7
+        width: 82
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51bc0d159ec061bf0800000000000000
+      internalID: -354081324462453995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBow_16
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 7
+        width: 82
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d60ce1f60e44b80c0800000000000000
+      internalID: -4572485265936957331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBow_17
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 7
+        width: 82
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9859ac6a7f79599a0800000000000000
+      internalID: -6226903819858831991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathBow_18
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 7
+        width: 82
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c97713fbe2f27ae00800000000000000
+      internalID: 1055864515464361884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HMMDeathBow_0: 7824701948531300131
+      HMMDeathBow_1: -4061000705582274184
+      HMMDeathBow_10: 611922180811365452
+      HMMDeathBow_11: -3637102213903193948
+      HMMDeathBow_12: -8051348054814332984
+      HMMDeathBow_13: 4991490921016673520
+      HMMDeathBow_14: 5572868980687243818
+      HMMDeathBow_15: -354081324462453995
+      HMMDeathBow_16: -4572485265936957331
+      HMMDeathBow_17: -6226903819858831991
+      HMMDeathBow_18: 1055864515464361884
+      HMMDeathBow_2: -2031711369890711012
+      HMMDeathBow_3: -7918633749167294273
+      HMMDeathBow_4: -6292276630634981859
+      HMMDeathBow_5: 3722100044205344794
+      HMMDeathBow_6: -8113764815424086212
+      HMMDeathBow_7: -4632937976579702605
+      HMMDeathBow_8: 9069842095602135937
+      HMMDeathBow_9: 228939685873549095
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

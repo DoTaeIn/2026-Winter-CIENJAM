@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 66879e78e9e3e3d4e86c5542bbbeace8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4489441299877267420
+    second: HMMJumpBare_0
+  - first:
+      213: 5733635805399396266
+    second: HMMJumpBare_1
+  - first:
+      213: -847233673407056893
+    second: HMMJumpBare_2
+  - first:
+      213: -8409862343395767995
+    second: HMMJumpBare_3
+  - first:
+      213: -4523412559740252615
+    second: HMMJumpBare_4
+  - first:
+      213: -4479144364457409493
+    second: HMMJumpBare_5
+  - first:
+      213: -1802017586850599046
+    second: HMMJumpBare_6
+  - first:
+      213: -2733836399396579899
+    second: HMMJumpBare_7
+  - first:
+      213: 7938789602363587552
+    second: HMMJumpBare_8
+  - first:
+      213: -7178303640838351988
+    second: HMMJumpBare_9
+  - first:
+      213: -6213006947804450806
+    second: HMMJumpBare_10
+  - first:
+      213: -6454869946218104139
+    second: HMMJumpBare_11
+  - first:
+      213: 3704232221373270622
+    second: HMMJumpBare_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HMMJumpBare_0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 7
+        width: 98
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 428f8d08cec42b1c0800000000000000
+      internalID: -4489441299877267420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBare_1
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 7
+        width: 106
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aafaa4c0367f19f40800000000000000
+      internalID: 5733635805399396266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBare_2
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 7
+        width: 106
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 304b2de76750e34f0800000000000000
+      internalID: -847233673407056893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBare_3
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 7
+        width: 122
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54906fb81ca2a4b80800000000000000
+      internalID: -8409862343395767995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBare_4
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 7
+        width: 90
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93e44243e3c9931c0800000000000000
+      internalID: -4523412559740252615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBare_5
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 7
+        width: 90
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b24c2da9ee1e6d1c0800000000000000
+      internalID: -4479144364457409493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBare_6
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 7
+        width: 106
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7f63c06d82fdf6e0800000000000000
+      internalID: -1802017586850599046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBare_7
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 7
+        width: 106
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c51feb77467f0ad0800000000000000
+      internalID: -2733836399396579899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBare_8
+      rect:
+        serializedVersion: 2
+        x: 2127
+        y: 7
+        width: 114
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb3273f41f3c2e60800000000000000
+      internalID: 7938789602363587552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBare_9
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 7
+        width: 114
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c83dfe5feda816c90800000000000000
+      internalID: -7178303640838351988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBare_10
+      rect:
+        serializedVersion: 2
+        x: 2655
+        y: 7
+        width: 66
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a00f4115917f6c9a0800000000000000
+      internalID: -6213006947804450806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBare_11
+      rect:
+        serializedVersion: 2
+        x: 2895
+        y: 7
+        width: 74
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba3358bbf1bb66a0800000000000000
+      internalID: -6454869946218104139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMJumpBare_12
+      rect:
+        serializedVersion: 2
+        x: 3143
+        y: 7
+        width: 90
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a82885493186330800000000000000
+      internalID: 3704232221373270622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HMMJumpBare_0: -4489441299877267420
+      HMMJumpBare_1: 5733635805399396266
+      HMMJumpBare_10: -6213006947804450806
+      HMMJumpBare_11: -6454869946218104139
+      HMMJumpBare_12: 3704232221373270622
+      HMMJumpBare_2: -847233673407056893
+      HMMJumpBare_3: -8409862343395767995
+      HMMJumpBare_4: -4523412559740252615
+      HMMJumpBare_5: -4479144364457409493
+      HMMJumpBare_6: -1802017586850599046
+      HMMJumpBare_7: -2733836399396579899
+      HMMJumpBare_8: 7938789602363587552
+      HMMJumpBare_9: -7178303640838351988
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

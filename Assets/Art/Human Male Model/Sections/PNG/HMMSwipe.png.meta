@@ -1,0 +1,1183 @@
+fileFormatVersion: 2
+guid: dd9674b18545c7442bf294baef55d2c6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2475057769209500131
+    second: HMMSwipe_0
+  - first:
+      213: 3485595618714348462
+    second: HMMSwipe_1
+  - first:
+      213: -647581626420755501
+    second: HMMSwipe_2
+  - first:
+      213: -91772540528610605
+    second: HMMSwipe_3
+  - first:
+      213: 571690488553293282
+    second: HMMSwipe_4
+  - first:
+      213: -8119876010682551800
+    second: HMMSwipe_5
+  - first:
+      213: -2415433465443852104
+    second: HMMSwipe_6
+  - first:
+      213: -5923185113583240454
+    second: HMMSwipe_7
+  - first:
+      213: -1307017180292454632
+    second: HMMSwipe_8
+  - first:
+      213: -6035597937763706079
+    second: HMMSwipe_9
+  - first:
+      213: -4068131330487718006
+    second: HMMSwipe_10
+  - first:
+      213: 8209937139161602936
+    second: HMMSwipe_11
+  - first:
+      213: 1922242329480505186
+    second: HMMSwipe_12
+  - first:
+      213: -1590708516878834549
+    second: HMMSwipe_13
+  - first:
+      213: 5486189351539015530
+    second: HMMSwipe_14
+  - first:
+      213: 8630258929311383683
+    second: HMMSwipe_15
+  - first:
+      213: -6999244845086420911
+    second: HMMSwipe_16
+  - first:
+      213: -1667341529838265438
+    second: HMMSwipe_17
+  - first:
+      213: 4441769176012568010
+    second: HMMSwipe_18
+  - first:
+      213: 768639555452665341
+    second: HMMSwipe_19
+  - first:
+      213: -7562255410569110821
+    second: HMMSwipe_20
+  - first:
+      213: -2238840291803092747
+    second: HMMSwipe_21
+  - first:
+      213: 8050491381548108753
+    second: HMMSwipe_22
+  - first:
+      213: 3773924383559414748
+    second: HMMSwipe_23
+  - first:
+      213: 5850897055120269437
+    second: HMMSwipe_24
+  - first:
+      213: 2682391345256360799
+    second: HMMSwipe_25
+  - first:
+      213: 6181825493311731433
+    second: HMMSwipe_26
+  - first:
+      213: 6617932270468344627
+    second: HMMSwipe_27
+  - first:
+      213: 5792411938731109507
+    second: HMMSwipe_28
+  - first:
+      213: 3556659001844655468
+    second: HMMSwipe_29
+  - first:
+      213: 7846358525915097214
+    second: HMMSwipe_30
+  - first:
+      213: 7749965311465241913
+    second: HMMSwipe_31
+  - first:
+      213: 6907196848239985420
+    second: HMMSwipe_32
+  - first:
+      213: 6135152764469012923
+    second: HMMSwipe_33
+  - first:
+      213: 3615592550972150997
+    second: HMMSwipe_34
+  - first:
+      213: -3945159643900194537
+    second: HMMSwipe_35
+  - first:
+      213: 257272358747394308
+    second: HMMSwipe_36
+  - first:
+      213: -6500076994711496455
+    second: HMMSwipe_37
+  - first:
+      213: -5885798557535905482
+    second: HMMSwipe_38
+  - first:
+      213: 250592351302768535
+    second: HMMSwipe_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HMMSwipe_0
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 7
+        width: 122
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e19d4c7deb295220800000000000000
+      internalID: 2475057769209500131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_1
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 223
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab602c6fb25f5030800000000000000
+      internalID: 3485595618714348462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_2
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 223
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d30f1a11f35307f0800000000000000
+      internalID: -647581626420755501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_3
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 199
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d238a15c55f9bef0800000000000000
+      internalID: -91772540528610605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_4
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 223
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e540bb687d0fe700800000000000000
+      internalID: 571690488553293282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_5
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 215
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 802fc0b0ac7605f80800000000000000
+      internalID: -8119876010682551800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_6
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 231
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b0e0a98f08aa7ed0800000000000000
+      internalID: -2415433465443852104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_7
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 7
+        width: 122
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa3df5858e9ccda0800000000000000
+      internalID: -5923185113583240454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_8
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 215
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 817e555acca8cdde0800000000000000
+      internalID: -1307017180292454632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_9
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 215
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12b938057af3d3ca0800000000000000
+      internalID: -6035597937763706079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_10
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 199
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8f64aadb181b87c0800000000000000
+      internalID: -4068131330487718006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_11
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 207
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b9308745e8fe170800000000000000
+      internalID: 8209937139161602936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_12
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 207
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 267a7e4d63d2daa10800000000000000
+      internalID: 1922242329480505186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_13
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 199
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b84af36280bace9e0800000000000000
+      internalID: -1590708516878834549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_14
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 7
+        width: 138
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6f730de52cd22c40800000000000000
+      internalID: 5486189351539015530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_15
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 7
+        width: 154
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3808f3965c6d4c770800000000000000
+      internalID: 8630258929311383683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_16
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 7
+        width: 154
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 150d3a0a5efadde90800000000000000
+      internalID: -6999244845086420911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_17
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 7
+        width: 154
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2abdbba66b96cd8e0800000000000000
+      internalID: -1667341529838265438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_18
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 7
+        width: 146
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac53286388554ad30800000000000000
+      internalID: 4441769176012568010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_19
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 7
+        width: 82
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfdf11f6a91caaa00800000000000000
+      internalID: 768639555452665341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_20
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 7
+        width: 114
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bda904845c87d0790800000000000000
+      internalID: -7562255410569110821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_21
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 183
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8ae32dd9a0ee0e0800000000000000
+      internalID: -2238840291803092747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_22
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 183
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dbc488124719bf60800000000000000
+      internalID: 8050491381548108753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_23
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 127
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd37e335b3caf5430800000000000000
+      internalID: 3773924383559414748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_24
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 151
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70a2db4fdf823150800000000000000
+      internalID: 5850897055120269437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_25
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 151
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b669277b4c93520800000000000000
+      internalID: 2682391345256360799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_26
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 119
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6bc4098814ac550800000000000000
+      internalID: 6181825493311731433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_27
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 135
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33b2cd0365e97db50800000000000000
+      internalID: 6617932270468344627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_28
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 87
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38cacc008f7c26050800000000000000
+      internalID: 5792411938731109507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_29
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 111
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c656528a48acb5130800000000000000
+      internalID: 3556659001844655468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_30
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 119
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e78e68de18dd3ec60800000000000000
+      internalID: 7846358525915097214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_31
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 119
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d3c73c3686d8b60800000000000000
+      internalID: 7749965311465241913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_32
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 119
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c03ca0500fa4bdf50800000000000000
+      internalID: 6907196848239985420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_33
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 87
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb96ee01fe0742550800000000000000
+      internalID: 6135152764469012923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_34
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 95
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d45e35d44a2d2230800000000000000
+      internalID: 3615592550972150997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_35
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 95
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7115f1bc43aff39c0800000000000000
+      internalID: -3945159643900194537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_36
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 55
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4015aa1e8d3029300800000000000000
+      internalID: 257272358747394308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_37
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 71
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f8588589661bc5a0800000000000000
+      internalID: -6500076994711496455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_38
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 55
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 639d09e6561715ea0800000000000000
+      internalID: -5885798557535905482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMSwipe_39
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 55
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 797d4d27a684a7300800000000000000
+      internalID: 250592351302768535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HMMSwipe_0: 2475057769209500131
+      HMMSwipe_1: 3485595618714348462
+      HMMSwipe_10: -4068131330487718006
+      HMMSwipe_11: 8209937139161602936
+      HMMSwipe_12: 1922242329480505186
+      HMMSwipe_13: -1590708516878834549
+      HMMSwipe_14: 5486189351539015530
+      HMMSwipe_15: 8630258929311383683
+      HMMSwipe_16: -6999244845086420911
+      HMMSwipe_17: -1667341529838265438
+      HMMSwipe_18: 4441769176012568010
+      HMMSwipe_19: 768639555452665341
+      HMMSwipe_2: -647581626420755501
+      HMMSwipe_20: -7562255410569110821
+      HMMSwipe_21: -2238840291803092747
+      HMMSwipe_22: 8050491381548108753
+      HMMSwipe_23: 3773924383559414748
+      HMMSwipe_24: 5850897055120269437
+      HMMSwipe_25: 2682391345256360799
+      HMMSwipe_26: 6181825493311731433
+      HMMSwipe_27: 6617932270468344627
+      HMMSwipe_28: 5792411938731109507
+      HMMSwipe_29: 3556659001844655468
+      HMMSwipe_3: -91772540528610605
+      HMMSwipe_30: 7846358525915097214
+      HMMSwipe_31: 7749965311465241913
+      HMMSwipe_32: 6907196848239985420
+      HMMSwipe_33: 6135152764469012923
+      HMMSwipe_34: 3615592550972150997
+      HMMSwipe_35: -3945159643900194537
+      HMMSwipe_36: 257272358747394308
+      HMMSwipe_37: -6500076994711496455
+      HMMSwipe_38: -5885798557535905482
+      HMMSwipe_39: 250592351302768535
+      HMMSwipe_4: 571690488553293282
+      HMMSwipe_5: -8119876010682551800
+      HMMSwipe_6: -2415433465443852104
+      HMMSwipe_7: -5923185113583240454
+      HMMSwipe_8: -1307017180292454632
+      HMMSwipe_9: -6035597937763706079
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
