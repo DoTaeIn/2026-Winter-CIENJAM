@@ -5,12 +5,89 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15d1f8bd-b8fd-4ec8-83a7-7dc5b9c702c3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Animation/Swipe.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Animation/Swipe/BSwipeDown.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Animation/Swipe/BSwipeDown/Back Arm_BSwipeDown.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Animation/Swipe/BSwipeDown/Back Arm_BSwipeDown.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Animation/Swipe/BSwipeDown/Front Arm_BSwipeDown.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Animation/Swipe/BSwipeDown/Front Arm_BSwipeDown.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Animation/Swipe/BSwipeUp.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Animation/Swipe/BSwipeUp/Back Arm_BSwipeUp.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Animation/Swipe/BSwipeUp/Back Arm_BSwipeUp.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Animation/Swipe/BSwipeUp/Front Arm_BSwipeUp.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Animation/Swipe/BSwipeUp/Front Arm_BSwipeUp.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Animation/Swipe/FSwipeDown.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Animation/Swipe/FSwipeDown/Back Arm_FSwipeDown.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Animation/Swipe/FSwipeDown/Back Arm_FSwipeDown.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Animation/Swipe/FSwipeDown/Front Arm_FSwipeDown.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Animation/Swipe/FSwipeDown/Front Arm_FSwipeDown.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Animation/Swipe/FSwipeUp.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Animation/Swipe/FSwipeUp/Back Arm_FSwipeUp.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Animation/Swipe/FSwipeUp/Back Arm_FSwipeUp.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Animation/Swipe/FSwipeUp/Front Arm_FSwipeUp.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Animation/Swipe/FSwipeUp/Front Arm_FSwipeUp.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/TestGlow.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/TestGlow.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/TestGlowTrail.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Materials/TestGlowTrail.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Shader/MeshGlow.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Shader/MeshGlow.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Shader/TrailGlow.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Shader/TrailGlow.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Sprites/BSwipeDown.aseprite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Sprites/BSwipeDown.aseprite.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Sprites/BSwipeUp.aseprite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Sprites/BSwipeUp.aseprite.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Sprites/FSwipeDown.aseprite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Sprites/FSwipeDown.aseprite.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Sprites/FSwipeUp.aseprite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Sprites/FSwipeUp.aseprite.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Sprites/Trail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Art/Sprites/Trail.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/AnimationTestScene.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/AnimationTestScene/Global Volume Profile.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/AnimationTestScene/Global Volume Profile.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterCollider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterCollider.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterColor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterColor.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2026-Winter-CIENJAM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2026-Winter-CIENJAM/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/JIn(test).unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/JIn(test).unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/JIn.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/JIn.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSystem/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSystem/UIManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/BodyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/BodyManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/BodyPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/BodyPart.cs" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Idle/Back Arm_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Idle/Back Arm_Idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Idle/Front Arm_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Idle/Front Arm_Idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Idle/Torso_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Idle/Torso_Idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Jump/Back Arm_JumpDown.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Jump/Back Arm_JumpDown.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Jump/Back Arm_JumpEnd.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Jump/Back Arm_JumpEnd.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Jump/Back Arm_JumpUp.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Jump/Back Arm_JumpUp.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Jump/Front Arm_JumpDown.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Jump/Front Arm_JumpDown.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Jump/Front Arm_JumpEnd.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Jump/Front Arm_JumpEnd.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Jump/Front Arm_JumpUp.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Jump/Front Arm_JumpUp.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Run/Back Arm_Run.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Run/Back Arm_Run.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Run/Front Arm_Run.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Run/Front Arm_Run.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Torso_OneLegIdle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Torso_OneLegIdle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Torso_Stop.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Torso_Stop.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Walk/Back Arm_Walk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Walk/Back Arm_Walk.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Walk/Back Leg_Walk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Walk/Back Leg_Walk.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Walk/Front Arm_Walk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Walk/Front Arm_Walk.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Walk/Front Leg_Walk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Walk/Front Leg_Walk.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Walk/Torso_Walk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Walk/Torso_Walk.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animator/Back Arm.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animator/Back Arm.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animator/Front Arm.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animator/Front Arm.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animator/Torso.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animator/Torso.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AnimationTestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AnimationTestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterAnimationTester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterAnimationTester.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterAnimator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IAnimatableCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IAnimatableCharacter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+>>>>>>> origin/main
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +141,8 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="39KSOBHR3oIlCSpMQaepdHhzPRJ" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -77,7 +155,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+<<<<<<< HEAD
     "git-widget-placeholder": "Integration",
+=======
+    "git-widget-placeholder": "main",
+>>>>>>> origin/main
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -98,9 +180,7 @@
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;C:\Users\qwqe0\OneDrive\바탕 화면\Dev\External Projects\2026-Winter-CIENJAM&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\qwqe0\OneDrive\바탕 화면\Dev\External Projects\2026-Winter-CIENJAM" />
       <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="ENV_FILE_PATHS" value="" />
-      <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
@@ -108,32 +188,24 @@
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;C:\Users\qwqe0\OneDrive\바탕 화면\Dev\External Projects\2026-Winter-CIENJAM&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\qwqe0\OneDrive\바탕 화면\Dev\External Projects\2026-Winter-CIENJAM" />
       <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="ENV_FILE_PATHS" value="" />
-      <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
-      <option name="runtimes">
-        <list />
-      </option>
       <option name="selectedOptions">
         <list />
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
-      <option name="runtimes">
-        <list />
-      </option>
       <option name="selectedOptions">
         <list />
       </option>

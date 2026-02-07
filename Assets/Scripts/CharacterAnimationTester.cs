@@ -10,13 +10,14 @@ public class CharacterAnimationTester : MonoBehaviour, IAnimatableCharacter
 
     public event Action OnJump;
     public event Action OnLand;
+    public event Action<CharacterPartType> OnSwipeDown;
+    public event Action<CharacterPartType> OnSwipeUp;
 
     public event Action<CharacterPartType> OnPartAttached;
     public event Action<CharacterPartType> OnPartDetached;
 
 
     public float speed;
-    public float timeScale = 1f;
     public bool isDetaching = true;
 
     
@@ -43,10 +44,13 @@ public class CharacterAnimationTester : MonoBehaviour, IAnimatableCharacter
         if (Keyboard.current.sKey.wasPressedThisFrame) func?.Invoke(CharacterPartType.BackArm);
         if (Keyboard.current.dKey.wasPressedThisFrame) func?.Invoke(CharacterPartType.FrontLeg);
         if (Keyboard.current.fKey.wasPressedThisFrame) func?.Invoke(CharacterPartType.BackLeg);
-        
-        GroundCheck();
 
-        Time.timeScale = timeScale;
+        if (Keyboard.current.qKey.wasPressedThisFrame) OnSwipeUp?.Invoke(CharacterPartType.FrontArm);
+        if (Keyboard.current.wKey.wasPressedThisFrame) OnSwipeDown?.Invoke(CharacterPartType.FrontArm);
+        if (Keyboard.current.eKey.wasPressedThisFrame) OnSwipeDown?.Invoke(CharacterPartType.BackArm);
+        if (Keyboard.current.rKey.wasPressedThisFrame) OnSwipeUp?.Invoke(CharacterPartType.BackArm);
+
+        GroundCheck();
     }
 
     void GroundCheck()
