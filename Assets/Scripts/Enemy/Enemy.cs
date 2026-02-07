@@ -1,9 +1,11 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Enemy : MonoBehaviour
 {
-    [Header("Basic Settings")]
+    [Header("Basic Settings")] 
+    [SerializeField] private int gold = 10;
     public float moveSpeed = 2f;
     public float idleTime = 2f;
     public LayerMask groundLayer;
@@ -23,9 +25,10 @@ public class Enemy : MonoBehaviour
     [HideInInspector] public Transform target;
     [HideInInspector] public int facingDir = 1;
 
+    private UnityEvent onDeathEvent;
+
     private void Awake()
     {
-        // [누락된 부분] 리지드바디 컴포넌트 가져오기
         rb = GetComponent<Rigidbody2D>(); 
 
         idleState = new IdleState(this);
@@ -33,6 +36,7 @@ public class Enemy : MonoBehaviour
         chaseState = new ChaseState(this);
     
         ChangeState(idleState);
+        onDeathEvent.AddListener(OnDeath);
     }
 
     void Update()
@@ -88,6 +92,12 @@ public class Enemy : MonoBehaviour
         }
         return false;
     }
-    
+
+    private void OnDeath()
+    {
+        //Enable Particle System
+        //Instantiate Gold Instance
+        //player add "gold" variable
+    }
 
 }
