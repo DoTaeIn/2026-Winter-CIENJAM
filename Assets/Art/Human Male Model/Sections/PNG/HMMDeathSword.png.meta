@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: 6b0c9ec13c42715459a10bc1c8dd539f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7468152617715088292
+    second: HMMDeathSword_0
+  - first:
+      213: -8176518446470585748
+    second: HMMDeathSword_1
+  - first:
+      213: -8318345724253639049
+    second: HMMDeathSword_2
+  - first:
+      213: -6880562287835405704
+    second: HMMDeathSword_3
+  - first:
+      213: -2854367136122925344
+    second: HMMDeathSword_4
+  - first:
+      213: 7484501943520258361
+    second: HMMDeathSword_5
+  - first:
+      213: 2959851945751198725
+    second: HMMDeathSword_6
+  - first:
+      213: -3317911726649445150
+    second: HMMDeathSword_7
+  - first:
+      213: -4729783043930053927
+    second: HMMDeathSword_8
+  - first:
+      213: -4767980700888453795
+    second: HMMDeathSword_9
+  - first:
+      213: -3727912977654255087
+    second: HMMDeathSword_10
+  - first:
+      213: 8918796781836635883
+    second: HMMDeathSword_11
+  - first:
+      213: -1391465882929358040
+    second: HMMDeathSword_12
+  - first:
+      213: 1823425190454668992
+    second: HMMDeathSword_13
+  - first:
+      213: -8584121963911265747
+    second: HMMDeathSword_14
+  - first:
+      213: 4892466073037213388
+    second: HMMDeathSword_15
+  - first:
+      213: 7685423953251263289
+    second: HMMDeathSword_16
+  - first:
+      213: 5151459437018780748
+    second: HMMDeathSword_17
+  - first:
+      213: 3336012797878420479
+    second: HMMDeathSword_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HMMDeathSword_0
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 7
+        width: 138
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5440bc13cacb5890800000000000000
+      internalID: -7468152617715088292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathSword_1
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 87
+        width: 58
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6221b24bcb278e80800000000000000
+      internalID: -8176518446470585748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathSword_2
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 7
+        width: 122
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ee8f2e2ac4f8c80800000000000000
+      internalID: -8318345724253639049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathSword_3
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 47
+        width: 66
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8722f92dd055380a0800000000000000
+      internalID: -6880562287835405704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathSword_4
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 7
+        width: 106
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ee08d876304368d0800000000000000
+      internalID: -2854367136122925344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathSword_5
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 7
+        width: 106
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 939ee30fcda4ed760800000000000000
+      internalID: 7484501943520258361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathSword_6
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 7
+        width: 106
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50cbf36a9a1831920800000000000000
+      internalID: 2959851945751198725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathSword_7
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 7
+        width: 106
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4f4f81dd864f1d0800000000000000
+      internalID: -3317911726649445150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathSword_8
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 7
+        width: 106
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d222e9816f6c5eb0800000000000000
+      internalID: -4729783043930053927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathSword_9
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 7
+        width: 106
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5d20ab70dab4ddb0800000000000000
+      internalID: -4767980700888453795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathSword_10
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 7
+        width: 130
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 112795de5eac34cc0800000000000000
+      internalID: -3727912977654255087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathSword_11
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 31
+        width: 74
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee05455b6ee5cb70800000000000000
+      internalID: 8918796781836635883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathSword_12
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 7
+        width: 82
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82b9bead62580bce0800000000000000
+      internalID: -1391465882929358040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathSword_13
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 7
+        width: 82
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ceac8fbc8b1e4910800000000000000
+      internalID: 1823425190454668992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathSword_14
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 7
+        width: 82
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d22c070fd821fd880800000000000000
+      internalID: -8584121963911265747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathSword_15
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 7
+        width: 82
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce8807d8f785e340800000000000000
+      internalID: 4892466073037213388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathSword_16
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 7
+        width: 82
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 933e1d9cd5c18aa60800000000000000
+      internalID: 7685423953251263289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathSword_17
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 7
+        width: 82
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c44965a7019ad7740800000000000000
+      internalID: 5151459437018780748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HMMDeathSword_18
+      rect:
+        serializedVersion: 2
+        x: 2407
+        y: 7
+        width: 130
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff343b7f6f5eb4e20800000000000000
+      internalID: 3336012797878420479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HMMDeathSword_0: -7468152617715088292
+      HMMDeathSword_1: -8176518446470585748
+      HMMDeathSword_10: -3727912977654255087
+      HMMDeathSword_11: 8918796781836635883
+      HMMDeathSword_12: -1391465882929358040
+      HMMDeathSword_13: 1823425190454668992
+      HMMDeathSword_14: -8584121963911265747
+      HMMDeathSword_15: 4892466073037213388
+      HMMDeathSword_16: 7685423953251263289
+      HMMDeathSword_17: 5151459437018780748
+      HMMDeathSword_18: 3336012797878420479
+      HMMDeathSword_2: -8318345724253639049
+      HMMDeathSword_3: -6880562287835405704
+      HMMDeathSword_4: -2854367136122925344
+      HMMDeathSword_5: 7484501943520258361
+      HMMDeathSword_6: 2959851945751198725
+      HMMDeathSword_7: -3317911726649445150
+      HMMDeathSword_8: -4729783043930053927
+      HMMDeathSword_9: -4767980700888453795
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

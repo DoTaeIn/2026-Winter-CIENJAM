@@ -42,7 +42,6 @@ public class PlayerMove : MonoBehaviour
             else
             {
                 Debug.Log("Jump Key Pressed, denied");
-                Debug.Log(isGrounded);
             }
         }
     }
