@@ -4,8 +4,8 @@ public class WeaponController : MonoBehaviour
 {
     [Header("References")]
     public WeaponData currentWeapon;
-    public WeaponData mainWeapon; //ÁÖ¹«±â
-    public WeaponData subWeapon; //º¸Á¶¹«±â
+    public WeaponData mainWeapon; //ï¿½Ö¹ï¿½ï¿½ï¿½
+    public WeaponData subWeapon; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     public Transform firePos;
     public SpriteRenderer weaponRenderer;
 
@@ -23,7 +23,7 @@ public class WeaponController : MonoBehaviour
 
     void Update()
     {
-        // ¹«±â ±³Ã¼ Ã¼Å©
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ Ã¼Å©
         if (Input.GetKeyDown(KeyCode.R))
         {
             if(currentWeapon == mainWeapon)
@@ -32,23 +32,23 @@ public class WeaponController : MonoBehaviour
                 EquipWeapon(mainWeapon);
         }
 
-        // °ø°İ ÄğÅ¸ÀÓ Ã¼Å©
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½ Ã¼Å©
         if (Time.time >= nextAttackTime)
         {
-            // ÁÂÅ¬¸¯: ±âº» °ø°İ (±ÙÁ¢ ÈÖµÎ¸£±â / È° ½î±â / ÁöÆÎÀÌ ¹°¸®°ø°İ)
+            // ï¿½ï¿½Å¬ï¿½ï¿½: ï¿½âº» ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½ ï¿½ÖµÎ¸ï¿½ï¿½ï¿½ / È° ï¿½ï¿½ï¿½ / ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
             if (Input.GetMouseButtonDown(0))
             {
                 Attack();
                 nextAttackTime = Time.time + currentWeapon.attackRate;
             }
 
-            // ¿ìÅ¬¸¯: Æ¯¼ö °ø°İ (ÁöÆÎÀÌ ¸¶¹ı µî)
+            // ï¿½ï¿½Å¬ï¿½ï¿½: Æ¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½)
             if (Input.GetMouseButtonDown(1) && currentWeapon is MagicWeaponData)
             {
-                // ¸¶¿ì½º ¿ùµå ÁÂÇ¥ °¡Á®¿À±â
+                // ï¿½ï¿½ï¿½ì½º ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-                // MagicWeaponÀ¸·Î Çüº¯È¯ÇØ¼­ ¸¶¹ı ÇÔ¼ö È£Ãâ
+                // MagicWeaponï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È¯ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½ È£ï¿½ï¿½
                 ((MagicWeaponData)currentWeapon).CastSpell(firePos, mousePos);
 
                 nextAttackTime = Time.time + currentWeapon.attackRate;
@@ -77,24 +77,5 @@ public class WeaponController : MonoBehaviour
         Debug.Log("Weapon changed.");
     }
 
-    void OnDrawGizmos()
-    {
-        if (!(currentWeapon is RangedWeaponData))
-        {
-            Gizmos.color = Color.red;
 
-            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-            // ÇÃ·¹ÀÌ¾îº¸´Ù ¿À¸¥ÂÊÀÎÁö ¿ŞÂÊÀÎÁö ÆÇ´Ü (YÃà ¹«½Ã)
-            bool isRight = mousePos.x > transform.position.x;
-
-            // ¹æÇâ º¤ÅÍ ¼³Á¤ (¿À¸¥ÂÊÀÌ¸é (1,0), ¿ŞÂÊÀÌ¸é (-1,0))
-            Vector2 facingDir = isRight ? Vector2.right : Vector2.left;
-
-            Vector3 center = transform.position + new Vector3(0f,1f,0f) + (Vector3)(facingDir * 1.0f);
-
-            // È¸Àü ¾øÀÌ ±×³É ±×¸®±â
-            Gizmos.DrawWireCube(center, new Vector2(1.0f, 2.0f));
-        }
-    }
 }

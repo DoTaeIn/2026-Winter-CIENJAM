@@ -4,7 +4,10 @@ public class ChaseState : IState
 {
     public ChaseState(Enemy _enemy) : base(_enemy) { }
 
-    public override void Enter() { Debug.Log("╩Себ ╨╞╟Ф: CHASE"); }
+    public override void Enter() 
+    { 
+        //Debug.Log("О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫: CHASE");
+    }
 
     public override void Update()
     {

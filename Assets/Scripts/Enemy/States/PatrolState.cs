@@ -6,7 +6,7 @@ public class PatrolState : IState
 
     public override void Enter()
     {
-        Debug.Log("상태 변경: Patrol");
+        //Debug.Log("상태 변경: Patrol");
     }
 
     public override void Update()

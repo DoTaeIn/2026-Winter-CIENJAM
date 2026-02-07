@@ -16,7 +16,7 @@ public class BodyPart : MonoBehaviour
     public event Action<BodyPartType> OnPartBroken;
     public event Action<BodyPartType> OnPartRestore;
 
-    public UnityEvent<BodyPartType, int> onPartDegradeEvent = new UnityEvent<BodyPartType, int>();
+    public UnityEvent<BodyPartType, float> onPartDegradeEvent = new UnityEvent<BodyPartType, float>();
 
     public void Init()
     {
@@ -38,7 +38,7 @@ public class BodyPart : MonoBehaviour
             OnPartBroken?.Invoke(partType);
         }
         
-        onPartDegradeEvent?.Invoke(partType, (int)(currHp / 10));
+        onPartDegradeEvent?.Invoke(partType, (int)(currHp));
     }
 
     // ȸ��

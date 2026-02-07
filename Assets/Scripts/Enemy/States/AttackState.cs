@@ -10,7 +10,7 @@ public class AttackState : IState
 
     public override void Enter()
     {
-        Debug.Log("상태 변경: ATTACK");
+        //Debug.Log("상태 변경: ATTACK");
         _enemy.SetVelocity(0);
         timer = 0;
         hasAttacked = false;

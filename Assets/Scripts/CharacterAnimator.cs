@@ -30,7 +30,6 @@ public class CharacterAnimator : MonoBehaviour
         backLeg = "Back Leg",
         frontArm = "Front Arm",
         frontLeg = "Front Leg",
-        torso = "Torso"
     };
 
     IAnimatableCharacter _character;
