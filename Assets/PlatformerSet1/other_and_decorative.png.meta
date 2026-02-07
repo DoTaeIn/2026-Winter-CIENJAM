@@ -583,9 +583,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 209
-        y: 512
+        y: 519
         width: 14
-        height: 15
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1590,6 +1590,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: other_and_decorative_67
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 512
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994a5861e07ba4f0d952cbd3d8eb9837
+      internalID: 1203506727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -1670,6 +1692,7 @@ TextureImporter:
       other_and_decorative_64: -2057976055
       other_and_decorative_65: -2076638675
       other_and_decorative_66: 1341944978
+      other_and_decorative_67: 1203506727
       other_and_decorative_7: 751989439
       other_and_decorative_8: -1085712280
       other_and_decorative_9: -264313471
