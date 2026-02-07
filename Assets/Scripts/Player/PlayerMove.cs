@@ -1,6 +1,9 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Windows;
+
+
 
 public class PlayerMove : MonoBehaviour
 {
@@ -11,7 +14,7 @@ public class PlayerMove : MonoBehaviour
     private Rigidbody2D rb;
     private Collider2D col;
     private BodyManager bm;
-    public LayerMask groundLayer; // ¿©±â¿¡ ¶¥ ·¹ÀÌ¾î ¼³Á¤
+    public LayerMask groundLayer; // ï¿½ï¿½ï¿½â¿¡ ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½
 
     void Awake()
     {
@@ -20,18 +23,13 @@ public class PlayerMove : MonoBehaviour
         col = GetComponent<Collider2D>();
     }
 
-    void Start()
-    {
-
-    }
-
     void Update()
     {
-        // ¶¥ ´ê¾ÆÀÖ´ÂÁö È®ÀÎÇÏ±â À§ÇØ raycast
+        // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½ È®ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ raycast
         float rayLength = col.bounds.extents.y - col.offset.y + 0.1f;
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector3.down, rayLength, groundLayer);
         isGrounded = (hit.collider != null);
-        // µð¹ö±×¿ë ¼±, ³ªÁß¿¡ Á¦°Å
+        // ï¿½ï¿½ï¿½ï¿½×¿ï¿½ ï¿½ï¿½, ï¿½ï¿½ï¿½ß¿ï¿½ ï¿½ï¿½ï¿½ï¿½
         Debug.DrawRay(transform.position, Vector2.down * rayLength, isGrounded ? Color.green : Color.red);
 
         if (UnityEngine.Input.GetKeyDown(KeyCode.Space))
@@ -41,9 +39,11 @@ public class PlayerMove : MonoBehaviour
                 Debug.Log("Jump Key Pressed, jumping");
                 Jump();
             }
-            else 
+            else
+            {
                 Debug.Log("Jump Key Pressed, denied");
                 Debug.Log(isGrounded);
+            }
         }
     }
 
@@ -51,7 +51,7 @@ public class PlayerMove : MonoBehaviour
     {
 
         float h = UnityEngine.Input.GetAxisRaw("Horizontal");
-        float speedMultiplier = bm.GetMovementSpeedMultiplier(); // ¼Óµµ ¹èÀ² °¡Á®¿À±â
+        float speedMultiplier = bm.GetMovementSpeedMultiplier(); // ï¿½Óµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         float appliedSpeed = moveSpeed * speedMultiplier;
 
         rb.linearVelocity = new Vector2(h * appliedSpeed, rb.linearVelocityY);

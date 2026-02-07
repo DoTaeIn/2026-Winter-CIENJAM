@@ -4,8 +4,11 @@ using UnityEngine.Events;
 
 public class Enemy : MonoBehaviour
 {
-    [Header("Basic Settings")] 
+    [Header("Enemy Settings")] 
     [SerializeField] private int gold = 10;
+    [SerializeField] private float hp = 10;
+    [SerializeField] private float damage = 10;
+    
     public float moveSpeed = 2f;
     public float idleTime = 2f;
     public LayerMask groundLayer;
@@ -37,6 +40,12 @@ public class Enemy : MonoBehaviour
     
         ChangeState(idleState);
         onDeathEvent.AddListener(OnDeath);
+    }
+
+    public void SetEnemyStats(float hp, float damage)
+    {
+        this.hp = hp;
+        this.damage = damage;
     }
 
     void Update()
