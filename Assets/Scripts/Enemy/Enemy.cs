@@ -129,7 +129,7 @@ public class Enemy : MonoBehaviour
 
         if (hitPlayer != null)
         {
-
+            hitPlayer.GetComponent<BodyManager>()?.ApplyDamageToRandom(attackDamage);
         }
     }
     
@@ -140,7 +140,7 @@ public class Enemy : MonoBehaviour
         
         if (currHp <= 0)
         {
-
+            // things to happen on death
             return;
         }
         

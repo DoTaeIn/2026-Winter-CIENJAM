@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 
@@ -38,13 +39,13 @@ public class BodyManager : MonoBehaviour
     private void OnEnable()
     {
         foreach (var part in bodyParts)
-            part.onPartBrokenEvent.AddListener(HandlePartDegraded);
+            part.onPartDegradeEvent.AddListener(HandlePartDegraded);
     }
 
     private void OnDisable()
     {
         foreach (var part in bodyParts)
-            part.onPartBrokenEvent.RemoveListener(HandlePartDegraded);
+            part.onPartDegradeEvent.RemoveListener(HandlePartDegraded);
     }
 
     private void HandlePartDegraded(BodyPartType type)
@@ -103,6 +104,50 @@ public class BodyManager : MonoBehaviour
     public BodyPart GetPart(BodyPartType type)
     { 
         return bodyParts.Find(p => p.partType == type); 
+    }
+
+    // get dgrade level of body part
+    public int GetDegradeLevel(BodyPartType type)
+    {
+        if (bodyPartDegradeLv.ContainsKey(type))
+        {
+            return bodyPartDegradeLv[type];
+        }
+        return 0; // 파괴된 부위면 0 취급
+    }
+
+    // return a random alive body part
+    public BodyPartType? GetRandomActiveBodyPart()
+    {
+        // get alive body parts and make list
+        List<BodyPartType> activeParts = bodyPartDegradeLv
+            .Where(part => part.Value > 0)
+            .Select(part => part.Key)
+            .ToList();
+
+        // if all parts broken? Dead
+        if (activeParts.Count == 0)
+        {
+            return null;
+        }
+
+        // pick random active body part
+        int randomIndex = UnityEngine.Random.Range(0, activeParts.Count);
+        return activeParts[randomIndex];
+    }
+
+    public void ApplyDamageToRandom(float damage)
+    {
+        BodyPartType? targetPart = GetRandomActiveBodyPart();
+        if (targetPart.HasValue)
+        {
+            ApplyDamageToPart(targetPart.Value, damage);
+            Debug.Log($"적 공격! -> {targetPart.Value} 타격 성공");
+        }
+        else
+        {
+            Debug.Log("공격 실패: 이미 싸늘한 시체...");
+        }
     }
 
     //public float GetHeight()

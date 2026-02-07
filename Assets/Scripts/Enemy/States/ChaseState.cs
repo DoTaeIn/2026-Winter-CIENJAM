@@ -3,8 +3,8 @@ using UnityEngine;
 public class ChaseState : IState
 {
     public ChaseState(Enemy _enemy) : base(_enemy) { }
-    
-    public override void Enter() { }
+
+    public override void Enter() { Debug.Log("상태 변경: CHASE"); }
 
     public override void Update()
     {
@@ -31,6 +31,12 @@ public class ChaseState : IState
             _enemy.target = null;
             _enemy.ChangeState(_enemy.patrolState);
         }
+
+        if(distanceX < _enemy.attackRange)
+        {
+            _enemy.ChangeState(_enemy.attackState);
+        }
+
     }
     
     public override void Exit() { }

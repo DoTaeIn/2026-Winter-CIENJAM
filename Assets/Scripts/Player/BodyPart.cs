@@ -9,13 +9,14 @@ public class BodyPart : MonoBehaviour
 {
     public BodyPartType partType; // � ��������
     float MaxHp = 50.0f;
+    private float prevHp;
     private float currHp;
     public bool isBroken;
 
     public event Action<BodyPartType> OnPartBroken;
     public event Action<BodyPartType> OnPartRestore;
 
-    public UnityEvent<BodyPartType> onPartBrokenEvent;
+    public UnityEvent<BodyPartType> onPartDegradeEvent = new UnityEvent<BodyPartType>();
 
     public void Init()
     {
@@ -28,8 +29,9 @@ public class BodyPart : MonoBehaviour
     {
         if (isBroken) return;
         else
-        {
-            currHp -= dmg;
+        { 
+            prevHp = currHp;
+            currHp = prevHp - dmg;
             if(currHp <= 0)
             {
                 currHp = 0;
@@ -37,10 +39,7 @@ public class BodyPart : MonoBehaviour
                 OnPartBroken?.Invoke(partType);
             }
         }
-
-        if(currHp % 10 == 0) onPartBrokenEvent?.Invoke(partType);
-        
-        
+        if(currHp / 10 != prevHp / 10) onPartDegradeEvent?.Invoke(partType);
     }
 
     // ȸ��
