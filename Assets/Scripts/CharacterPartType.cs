@@ -5,5 +5,4 @@
     FrontLeg,
     BackLeg,
     Torso,
-    Head,
 }

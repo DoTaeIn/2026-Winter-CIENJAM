@@ -169,48 +169,6 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 42, y: 4}
-  - name: Front Arm_Frame_0
-    originalName: 
-    pivot: {x: 0.75, y: 0.90909094}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 30
-      y: 4
-      width: 4
-      height: 11
-    spriteID: d6b2d71be192a0c41a47faacce2d4d78
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 30, y: 4}
-  - name: Front Arm_Frame_1
-    originalName: 
-    pivot: {x: 0.75, y: 0.90909094}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 30
-      y: 23
-      width: 4
-      height: 11
-    spriteID: a909f542a0308f845945f00f374c61c7
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 30, y: 23}
   - name: Back Leg_Frame_0
     originalName: 
     pivot: {x: 0.5, y: 1}
@@ -297,7 +255,7 @@ ScriptedImporter:
     uvTransform: {x: 18, y: 44}
   - name: Head_Frame_0
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -379,6 +337,48 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 22}
+  - name: Front Arm_Frame_0
+    originalName: 
+    pivot: {x: 0.75, y: 0.90909094}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 4
+      width: 4
+      height: 11
+    spriteID: e8445cc8789aa0a4b8f754d1012d24d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: 4}
+  - name: Front Arm_Frame_1
+    originalName: 
+    pivot: {x: 0.75, y: 0.90909094}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 23
+      width: 4
+      height: 11
+    spriteID: 7c4e1b1d4a65873489e60d3f2f9cc673
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: 23}
   spriteSheetImportData: []
   tileSetImportData: []
   asepriteLayers:
@@ -526,7 +526,7 @@ ScriptedImporter:
       value3: 0
     guid: 0
     name: Front Arm
-    layerFlags: 1
+    layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
@@ -538,7 +538,7 @@ ScriptedImporter:
         y: 9
         width: 4
         height: 11
-      spriteId: d6b2d71be192a0c41a47faacce2d4d78
+      spriteId: e8445cc8789aa0a4b8f754d1012d24d6
     - name: Front Arm_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -547,7 +547,7 @@ ScriptedImporter:
         y: 9
         width: 4
         height: 11
-      spriteId: a909f542a0308f845945f00f374c61c7
+      spriteId: 7c4e1b1d4a65873489e60d3f2f9cc673
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
