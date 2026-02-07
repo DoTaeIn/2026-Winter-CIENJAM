@@ -6,10 +6,20 @@ using UnityEngine;
 
 public class BodyManager : MonoBehaviour
 {
+
     [Header("Body Parts")]
     public List<BodyPart> bodyParts = new List<BodyPart>();
+    private Dictionary<BodyPartType, int> bodyPartDegradeLv = new Dictionary<BodyPartType, int>()
+    {
+        { BodyPartType.LeftArm, 4 },
+        { BodyPartType.RightArm, 4 },
+        { BodyPartType.LeftLeg, 4 },
+        { BodyPartType.RightLeg, 4 },
+        { BodyPartType.Head, 4 }
+    };
     
     //private float height; //raycast 용 키 높이, 다리 파괴되면 변동 가능
+    
 
     private void Start()
     {
@@ -20,6 +30,24 @@ public class BodyManager : MonoBehaviour
             part.OnPartBroken += HandlePartBroken; // 파괴 이벤트 연결
             part.OnPartRestore += HandlePartRestore; // 복구 이벤트 연결
         }
+    }
+
+    private void OnEnable()
+    {
+        foreach (var part in bodyParts)
+            part.onPartBrokenEvent.AddListener(HandlePartDegraded);
+    }
+
+    private void OnDisable()
+    {
+        foreach (var part in bodyParts)
+            part.onPartBrokenEvent.RemoveListener(HandlePartDegraded);
+    }
+
+    private void HandlePartDegraded(BodyPartType type)
+    {
+        int lv = bodyPartDegradeLv[type] - 1;
+        UIManager.instance.DegradePart(type, lv);
     }
 
     // 데미지 처리

@@ -1,12 +1,13 @@
 using UnityEngine;
 using System;
+using UnityEngine.Events;
 
-public enum BodyPartType { LeftArm, RightArm, LeftLeg, RightLeg } // Head, Torso Ãß°¡ °í·Á
+public enum BodyPartType { LeftArm, RightArm, LeftLeg, RightLeg, Head } // Head, Torso ï¿½ß°ï¿½ ï¿½ï¿½ï¿½ï¿½
 
 
 public class BodyPart : MonoBehaviour
 {
-    public BodyPartType partType; // ¾î¶² ºÎÀ§ÀÎÁö
+    public BodyPartType partType; // ï¿½î¶² ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     float MaxHp = 50.0f;
     private float currHp;
     public bool isBroken;
@@ -14,13 +15,15 @@ public class BodyPart : MonoBehaviour
     public event Action<BodyPartType> OnPartBroken;
     public event Action<BodyPartType> OnPartRestore;
 
+    public UnityEvent<BodyPartType> onPartBrokenEvent;
+
     public void Init()
     {
         currHp = MaxHp;
         isBroken = false;
     }
 
-    // µ¥¹ÌÁö ¹Þ±â
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Þ±ï¿½
     public void TakeDamage(float dmg)
     {
         if (isBroken) return;
@@ -34,15 +37,19 @@ public class BodyPart : MonoBehaviour
                 OnPartBroken?.Invoke(partType);
             }
         }
+
+        if(currHp % 10 == 0) onPartBrokenEvent?.Invoke(partType);
+        
+        
     }
 
-    // È¸º¹
+    // È¸ï¿½ï¿½
     void healHp(float amount)
     {
         if (isBroken) 
         {
             isBroken = false;
-            // ºÎÀ§ º¹±¸ ½Ã ÇÊ¿äÇÑ ´Ù¸¥ ·ÎÁ÷
+            // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ê¿ï¿½ï¿½ï¿½ ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½ï¿½
         }
         else
         {
@@ -50,7 +57,7 @@ public class BodyPart : MonoBehaviour
         }
     }
 
-    // ºÎÀ§ ¾×¼Ç
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½×¼ï¿½
     void PerformAction()
     {
 

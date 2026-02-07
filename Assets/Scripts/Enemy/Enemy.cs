@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour
     [HideInInspector] public Transform target;
     [HideInInspector] public int facingDir = 1;
 
-    private UnityEvent onDeathEvent;
+    private UnityEvent onDeathEvent = new UnityEvent();
 
     private void Awake()
     {
@@ -39,9 +39,13 @@ public class Enemy : MonoBehaviour
         chaseState = new ChaseState(this);
     
         ChangeState(idleState);
-        onDeathEvent.AddListener(OnDeath);
+        
     }
 
+    private void OnEnable() => onDeathEvent.AddListener(OnDeath);
+    private void OnDisable() => onDeathEvent.RemoveListener(OnDeath);
+    
+    
     public void SetEnemyStats(float hp, float damage)
     {
         this.hp = hp;
@@ -79,13 +83,10 @@ public class Enemy : MonoBehaviour
     
     public bool CheckEnvironment()
     {
-        // [수정된 부분] 방향에 따라 센서를 바꿀 필요가 없습니다!
-        // Flip()을 하면 frontCheck 센서도 같이 돌아서 항상 '앞'을 가리킵니다.
         
         RaycastHit2D hit = Physics2D.Raycast(frontCheck.position, Vector2.down, 1f, groundLayer);
         bool isCliff = (hit.collider == null);
-
-        // 벽 체크는 방향(facingDir)이 필요합니다 (Ray를 쏘는 방향 때문)
+        
         bool isWall = Physics2D.Raycast(wallCheck.position, Vector2.right * facingDir, 0.5f, groundLayer).collider != null;
 
         return isCliff || isWall;

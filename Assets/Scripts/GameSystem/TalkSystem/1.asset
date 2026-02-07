@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30bfe080d441ec547bf5360c8385a1ea, type: 3}
+  m_Name: 1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  dialogueId: 0
+  lines:
+  - npc: {fileID: 11400000, guid: 56601547bf47d8b48a9c6d6d9868ce49, type: 2}
+    context: "\uB098\uB294 \uB545\uC5D0\uC11C \uAC00\uAE4C\uC6B4 \uC790, \uBC15\uC0C1\uADDC\uB77C\uACE0
+      \uD55C\uB2E4."
+  - npc: {fileID: 11400000, guid: 56601547bf47d8b48a9c6d6d9868ce49, type: 2}
+    context: "\uB545\uC5D0\uC11C \uAC00\uAE4C\uC6B4\uB0A8\uC790?? \uC18C\uBB38\uC73C\uB85C\uB9CC
+      \uB4E3\uB358 \uADF8\uC790\uAD70... \uC5ED\uC2DC \uD0A4\uAC00 \uC791\uC544\uC11C
+      \uC0C1\uC790\uC704\uC5D0 \uC11C \uC788\uB294\uAC74\uAC00..."

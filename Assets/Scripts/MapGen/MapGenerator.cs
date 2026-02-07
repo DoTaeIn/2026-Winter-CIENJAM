@@ -43,7 +43,7 @@ public class MapGenerator : MonoBehaviour
 
     void Start()
     {
-        Generate();
+        //Generate();
     }
     
     public void Generate()
@@ -101,7 +101,9 @@ public class MapGenerator : MonoBehaviour
             
             if (monsterPrefab != null)
             {
-                enemies.Add(Instantiate(monsterPrefab, spawnPos, Quaternion.identity, monsterParent).GetComponent<Enemy>());
+                GameObject gm = Instantiate(monsterPrefab, spawnPos, Quaternion.identity, monsterParent);
+                if(gm.GetComponent<Enemy>() != null)
+                    enemies.Add(gm.GetComponent<Enemy>());
             }
             
             validSpawnPoints.RemoveAt(randomIndex);
