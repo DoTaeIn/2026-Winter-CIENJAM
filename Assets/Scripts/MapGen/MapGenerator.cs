@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
-using System.Collections.Generic; // 리스트 사용을 위해 필수
+using System.Collections.Generic;
+using UnityEngine.Events; // 리스트 사용을 위해 필수
 
 public class MapGenerator : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class MapGenerator : MonoBehaviour
     [SerializeField] private Tilemap wallTilemap;
     [SerializeField] private Tilemap backTilemap;
     [SerializeField] private int minHorizontalMove = 3;
+    public Vector2 startPoint;
     
     [Header("Monster Settings")]
     [SerializeField] private GameObject monsterPrefab;
@@ -36,6 +38,8 @@ public class MapGenerator : MonoBehaviour
     [SerializeField] private int minY = 5;
     [SerializeField] private int maxY = 7;
     [SerializeField] private int maxX = 6;
+
+    public UnityEvent onMapGenerated;
 
     void Start()
     {
@@ -71,17 +75,20 @@ public class MapGenerator : MonoBehaviour
             DrawThickPlatform(currentPos, width, height);
 
             Vector3 spawnPos = tilemap.GetCellCenterWorld(currentPos) + Vector3.up; 
-            validSpawnPoints.Add(spawnPos);
+            if(i == 0) startPoint = spawnPos;
+            else validSpawnPoints.Add(spawnPos);
         }
 
         DrawBorders(10, -(mapHeight));
         DrawBackground(mapWidth, mapHeight);
         
         SpawnMonsters();
+        onMapGenerated.Invoke();
     }
     
     void SpawnMonsters()
     {
+        List<Enemy> enemies = new List<Enemy>();
         if (validSpawnPoints.Count == 0) return;
 
         int spawnLimit = Mathf.Min(monsterCount, validSpawnPoints.Count);
@@ -94,7 +101,7 @@ public class MapGenerator : MonoBehaviour
             
             if (monsterPrefab != null)
             {
-                Instantiate(monsterPrefab, spawnPos, Quaternion.identity, monsterParent);
+                enemies.Add(Instantiate(monsterPrefab, spawnPos, Quaternion.identity, monsterParent).GetComponent<Enemy>());
             }
             
             validSpawnPoints.RemoveAt(randomIndex);
@@ -105,6 +112,9 @@ public class MapGenerator : MonoBehaviour
             Vector3 spawnPos = validSpawnPoints[i];
             if (chestPrefab != null) Instantiate(chestPrefab, spawnPos, Quaternion.identity);
         }
+        
+        GameSystem gameSystem = FindFirstObjectByType<GameSystem>();
+        gameSystem.enemies = enemies;
     }
 
     void DrawThickPlatform(Vector3Int topCenterPos, int width, int height)
