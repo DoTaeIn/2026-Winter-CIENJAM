@@ -43,8 +43,7 @@ public class UIManager : MonoBehaviour
     }
     
     [SerializeField] private List<UIObj> UIs;
-
-
+    
     public void TogglePanel(string name)
     {
         GameObject go = FindPanel(name).Obj;
@@ -83,5 +82,10 @@ public class UIManager : MonoBehaviour
                 Rleg.sprite = bodyImgs[degradeLv].leg;
                 break;
         }
+    }
+
+    public void SelectPN(bool isPositive)
+    {
+        //player -> currNPC -> NPC Perform PN
     }
 }
