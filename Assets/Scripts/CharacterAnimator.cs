@@ -1,10 +1,19 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
 public class CharacterAnimator : MonoBehaviour
 {
+    static List<CharacterPartType> armLegTypes = new List<CharacterPartType>
+    {
+        CharacterPartType.BackArm,
+        CharacterPartType.BackLeg,
+        CharacterPartType.FrontArm,
+        CharacterPartType.FrontLeg
+    }; 
+    
     [Serializable]
     class CharacterPart
     {
@@ -65,6 +74,8 @@ public class CharacterAnimator : MonoBehaviour
     {
         _character.OnJump += OnJump;
         _character.OnLand += OnLand;
+        _character.OnSwipeDown += OnSwipeDown;
+        _character.OnSwipeUp += OnSwipeUp;
         _character.OnPartAttached += OnPartAttached;
         _character.OnPartDetached += OnPartDetached;
     }
@@ -73,6 +84,8 @@ public class CharacterAnimator : MonoBehaviour
     {
         _character.OnJump -= OnJump;
         _character.OnLand -= OnLand;
+        _character.OnSwipeDown -= OnSwipeDown;
+        _character.OnSwipeUp -= OnSwipeUp;
         _character.OnPartAttached -= OnPartAttached;
         _character.OnPartDetached -= OnPartDetached;
     }
@@ -99,28 +112,36 @@ public class CharacterAnimator : MonoBehaviour
             Play(CharacterPartType.Torso, torsoState);
         }
 
+        var torsoSyncParts = armLegTypes.Where(
+            partType => !IsPlaying(partType, "FSwipeUp") &&
+                         !IsPlaying(partType, "FSwipeDown") &&
+                         !IsPlaying(partType, "BSwipeUp") &&
+                         !IsPlaying(partType, "BSwipeDown")
+            ).ToList();
+        
         if (torsoState == "OneLegIdle")
-        {
-            Play(CharacterPartType.BackArm, torsoState);
-            Play(CharacterPartType.FrontArm, torsoState);
-            Play(CharacterPartType.BackLeg, torsoState);
-            Play(CharacterPartType.FrontLeg, torsoState);
-        }
+            torsoSyncParts.ForEach(e => Play(e, "Idle"));
         else if(torsoState == "Stop")
-        {
-            if (move)
-            {
-                
-            }
-        }
+            torsoSyncParts.ForEach(e => Play(e, move ? "Walk" : "Idle"));
         else
-        {
-            SyncAnimationState(CharacterPartType.BackArm, CharacterPartType.Torso);
-            SyncAnimationState(CharacterPartType.FrontArm, CharacterPartType.Torso);
-            SyncAnimationState(CharacterPartType.BackLeg, CharacterPartType.Torso);
-            SyncAnimationState(CharacterPartType.FrontLeg, CharacterPartType.Torso);
-        }
+            torsoSyncParts.ForEach(e => SyncAnimationState(e, CharacterPartType.Torso));
     }
+    void OnSwipeUp(CharacterPartType partType) => OnSwipe(partType, true);
+    void OnSwipeDown(CharacterPartType partType) => OnSwipe(partType, false);
+
+    void OnSwipe(CharacterPartType partType, bool isUp)
+    {
+        if (partType != CharacterPartType.BackArm && partType != CharacterPartType.FrontArm) return;
+        bool isFrontArm = partType == CharacterPartType.FrontArm;
+        string state = isUp
+            ? (isFrontArm ? "FSwipeUp" : "BSwipeUp")
+            : (isFrontArm ? "FSwipeDown" : "BSwipeDown");
+        Play(CharacterPartType.BackArm, state , false);
+        Play(CharacterPartType.FrontArm, state , false);
+        UpdateAnimator(CharacterPartType.BackArm);
+        UpdateAnimator(CharacterPartType.FrontArm);
+    }
+
 
     void OnJump()
     {
@@ -160,6 +181,12 @@ public class CharacterAnimator : MonoBehaviour
         if (dontPlayIfAlreadyPlaying && state.shortNameHash == stateHash) return;
 
         animator.Play(stateHash);
+    }
+
+    void UpdateAnimator(CharacterPartType partType)
+    {
+        if (!_parts[partType].enabled) return;
+        _parts[partType].animator.Update(0);
     }
 
     bool IsPlaying(CharacterPartType partType, string stateName, bool considerFinishedAsPlaying = false) =>
