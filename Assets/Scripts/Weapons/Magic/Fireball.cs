@@ -4,10 +4,15 @@ public class Fireball : SpellBehavior
 {
     [Header("Settings")]
     public float speed = 8f;
+    public float explodeRadius = 1.0f;
 
+    private float damage;
     public override void Initialize(Vector2 targetPos, float dmg)
     {
         Debug.Log("Cast Fireball!");
+
+        damage = dmg;
+
         base.Initialize(targetPos, dmg);
         Vector2 dir = (targetPos - (Vector2)transform.position).normalized;
         GetComponent<Rigidbody2D>().linearVelocity = dir * speed;
@@ -17,15 +22,19 @@ public class Fireball : SpellBehavior
     {
         if (other.CompareTag("Enemy"))
         {
-            // 적에게 데미지 주는 로직
-            
-            //폭발 이펙트?
+            Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, explodeRadius);
+
+            foreach (Collider2D enemy in enemies)
+            {
+                    // 적에게 데미지 주는 로직
+                    other.GetComponent<Enemy>()?.TakeDamage(damage);
+                    // explosion effect can be implemented here
+            }
             Destroy(gameObject);
         }
 
         if (other.CompareTag("Ground"))
         {
-
             Destroy(gameObject);
         }
     }

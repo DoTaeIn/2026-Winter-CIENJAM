@@ -6,7 +6,9 @@ public class IceFloor : SpellBehavior
     public float speed = 8f;
     public float floorDuration = 3f;
     public float floorDmg = 2f;
-    public GameObject floorPrefab; 
+    public GameObject floorPrefab;
+
+    private float damage;
     public override void Initialize(Vector2 targetPos, float dmg)
     {
         Debug.Log("Cast IceFloor!");
@@ -19,7 +21,7 @@ public class IceFloor : SpellBehavior
     {
         if (other.CompareTag("Enemy"))
         {
-            // damage enemy here
+            other.GetComponent<Enemy>()?.TakeDamage(damage);
             Destroy(gameObject);
         }
 

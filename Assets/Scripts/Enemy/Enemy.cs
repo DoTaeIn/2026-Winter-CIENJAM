@@ -140,6 +140,7 @@ public class Enemy : MonoBehaviour
         
         if (currHp <= 0)
         {
+
             return;
         }
         

@@ -29,6 +29,8 @@ public class GameSystem : MonoBehaviour
 
     MapGenerator mapGenerator;
 
+    public GameObject Player;
+
     private void Awake()
     {
         mapGenerator = FindFirstObjectByType<MapGenerator>();
@@ -86,7 +88,7 @@ private void OnEnable()
             e.SetEnemyStats(setHp, setDamage);
         }
         
-        //MoveTo(Player, mapGenerator.startPoint, false);
+        MoveTo(Player, mapGenerator.startPoint, false);
     }
 
     void MoveTo(GameObject obj, Vector3 pos, bool isRest)

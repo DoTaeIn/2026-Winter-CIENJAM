@@ -4,6 +4,7 @@ using UnityEngine;
 public class RangedWeaponData : WeaponData
 {
     public float projectileSpeed = 30f;
+
     public override void Attack(Transform firePos, Vector2 targetPos, LayerMask enemyLayer)
     {
         Debug.Log("Bow attack!");
@@ -11,8 +12,9 @@ public class RangedWeaponData : WeaponData
         var arrowController = ArrowPoolManager.Instance.GetArrow();
         GameObject arrow = arrowController.gameObject;
 
-        arrow.transform.position = firePos.position;
+        arrow.GetComponent<ArrowBehavior>().dmg = damage;
 
+        arrow.transform.position = firePos.position;
         // 마우스 방향 계산
         Vector2 direction = (targetPos - (Vector2)firePos.position).normalized;
         // 화살 회전 (날아가는 방향을 보도록)
