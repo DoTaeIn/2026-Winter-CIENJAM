@@ -492,7 +492,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   gold: 10
-  hp: 10
+  currHp: 10
+  maxHp: 10
   damage: 10
   moveSpeed: 2
   idleTime: 2
@@ -501,10 +502,18 @@ MonoBehaviour:
     m_Bits: 8
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
+  attackRange: 1.5
+  attackDamage: 10
+  attackCooldown: 2
+  attackWindup: 0.5
+  attackDuration: 1
+  attackPoint: {fileID: 0}
+  attackRadius: 0.5
   frontCheck: {fileID: 2243796268779222280}
   wallCheck: {fileID: 4512885728688514557}
   detectRange: 5
   rb: {fileID: 0}
   target: {fileID: 0}
   facingDir: 1
+  lastAttackTime: 0

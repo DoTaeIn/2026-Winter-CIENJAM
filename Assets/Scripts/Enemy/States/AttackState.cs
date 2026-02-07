@@ -11,7 +11,7 @@ public class AttackState : IState
     public override void Enter()
     {
         Debug.Log("상태 변경: ATTACK");
-        enemy.SetVelocity(0);
+        _enemy.SetVelocity(0);
         timer = 0;
         hasAttacked = false;
 
@@ -23,16 +23,17 @@ public class AttackState : IState
     {
         timer += Time.deltaTime;
         
-        if (timer >= enemy.attackWindup && !hasAttacked)
+        if (timer >= _enemy.attackWindup && !hasAttacked)
         {
-            enemy.PerformAttack();
+            Debug.Log("Enemy has Attacked!");
+            _enemy.PerformAttack();
             hasAttacked = true;
         }
         
-        if (timer >= enemy.attackDuration)
+        if (timer >= _enemy.attackDuration)
         {
-            enemy.lastAttackTime = Time.time;
-            enemy.ChangeState(enemy.chaseState);
+            _enemy.lastAttackTime = Time.time;
+            _enemy.ChangeState(_enemy.chaseState);
         }
     }
 
