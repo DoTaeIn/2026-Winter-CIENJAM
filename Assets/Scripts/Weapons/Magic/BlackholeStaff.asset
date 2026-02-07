@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 339a4983d7850ad43903a54112936329, type: 3}
   m_Name: BlackholeStaff
   m_EditorClassIdentifier: Assembly-CSharp::MagicWeaponData
-  weaponSprite: {fileID: 0}
+  weaponSprite: {fileID: -4238261132931420093, guid: 1a40184e1cc96404f897b0987b7d950d, type: 3}
   weaponName: Blackhole Staff
   damage: 10
   range: 1.5
