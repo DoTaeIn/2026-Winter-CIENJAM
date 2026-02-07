@@ -17,9 +17,12 @@ public class BodyManager : MonoBehaviour
         { BodyPartType.RightLeg, 4 },
         { BodyPartType.Head, 4 }
     };
-    
+
+    public event Action<BodyPartType> OnBodyPartBroken;
+    public event Action<BodyPartType> OnBodyPartRestored;
+
     //private float height; //raycast �� Ű ����, �ٸ� �ı��Ǹ� ���� ����
-    
+
 
     private void Start()
     {
