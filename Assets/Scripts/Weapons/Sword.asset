@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f7bfbad1d116df4180f14c1c25e7297, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: Assembly-CSharp::MeleeWeaponData
+  weaponSprite: {fileID: 21300000, guid: 048637bba7f02c8499a2dfc07ecc075f, type: 3}
   weaponName: sword
   damage: 10
   range: 1.5
