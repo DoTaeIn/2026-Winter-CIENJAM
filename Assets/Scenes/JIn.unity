@@ -17092,30 +17092,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
   bodyImgs:
   - partType: 0
-    degradeLv: 4
-    head: {fileID: 7145198348311737387, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
-    arm: {fileID: -5564752774255026670, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
-    leg: {fileID: -2936627703930910875, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
-  - partType: 0
-    degradeLv: 4
-    head: {fileID: -3708508325519384304, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
-    arm: {fileID: -5248528119860549934, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
-    leg: {fileID: -5543670047920101812, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
-  - partType: 0
-    degradeLv: 4
-    head: {fileID: 3106341853739790030, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
-    arm: {fileID: 2659349063302250091, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
-    leg: {fileID: 1378275472504835762, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
-  - partType: 0
-    degradeLv: 4
-    head: {fileID: 94058731202090889, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
-    arm: {fileID: 6264823020680326872, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
-    leg: {fileID: -774408781709350421, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
-  - partType: 0
-    degradeLv: 4
-    head: {fileID: 1222221480408444849, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
-    arm: {fileID: -3469671590282731435, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
-    leg: {fileID: -4447853890616433675, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
+    sprites:
+    - {fileID: 1222221480408444849, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
+    - {fileID: 94058731202090889, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
+    - {fileID: 3106341853739790030, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
+    - {fileID: -3708508325519384304, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
+    - {fileID: 7145198348311737387, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
+  - partType: 1
+    sprites:
+    - {fileID: -5564752774255026670, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
+    - {fileID: -5248528119860549934, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
+    - {fileID: 2659349063302250091, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
+    - {fileID: 6264823020680326872, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
+    - {fileID: -3469671590282731435, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
+  - partType: 2
+    sprites:
+    - {fileID: -2936627703930910875, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
+    - {fileID: -5543670047920101812, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
+    - {fileID: 1378275472504835762, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
+    - {fileID: -774408781709350421, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
+    - {fileID: -4447853890616433675, guid: 6364ff8f8ee5df74c857dd37a14aab04, type: 3}
   UIs:
   - name: Talk
     Obj: {fileID: 1310902546}

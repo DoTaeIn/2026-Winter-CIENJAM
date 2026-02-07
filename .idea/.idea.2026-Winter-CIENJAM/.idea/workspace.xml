@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="15d1f8bd-b8fd-4ec8-83a7-7dc5b9c702c3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2026-Winter-CIENJAM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2026-Winter-CIENJAM/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/JIn(test).unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/JIn(test).unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/JIn.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/JIn.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSystem/TalkSystem/ShopKeeper.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSystem/TalkSystem/ShopKeeper.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSystem/TalkSystem/TalkSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSystem/TalkSystem/TalkSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameSystem/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameSystem/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/BodyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/BodyManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/BodyPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/BodyPart.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +77,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "NPC",
+    "git-widget-placeholder": "Integration",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

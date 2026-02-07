@@ -10,20 +10,13 @@ public class BodyManager : MonoBehaviour
 
     [Header("Body Parts")]
     public List<BodyPart> bodyParts = new List<BodyPart>();
-    private Dictionary<BodyPartType, int> bodyPartDegradeLv = new Dictionary<BodyPartType, int>()
-    {
-        { BodyPartType.LeftArm, 4 },
-        { BodyPartType.RightArm, 4 },
-        { BodyPartType.LeftLeg, 4 },
-        { BodyPartType.RightLeg, 4 },
-        { BodyPartType.Head, 4 }
-    };
+    private List<BodyPart> bodyPartsDegradeLv;
 
     public event Action<BodyPartType> OnBodyPartBroken;
     public event Action<BodyPartType> OnBodyPartRestored;
 
     //private float height; //raycast �� Ű ����, �ٸ� �ı��Ǹ� ���� ����
-
+    
 
     private void Start()
     {
@@ -34,6 +27,8 @@ public class BodyManager : MonoBehaviour
             part.OnPartBroken += HandlePartBroken; // �ı� �̺�Ʈ ����
             part.OnPartRestore += HandlePartRestore; // ���� �̺�Ʈ ����
         }
+        
+        bodyPartsDegradeLv = GetComponentsInChildren<BodyPart>().ToList(); 
     }
 
     private void OnEnable()
@@ -48,9 +43,8 @@ public class BodyManager : MonoBehaviour
             part.onPartDegradeEvent.RemoveListener(HandlePartDegraded);
     }
 
-    private void HandlePartDegraded(BodyPartType type)
+    private void HandlePartDegraded(BodyPartType type, int lv)
     {
-        int lv = bodyPartDegradeLv[type] - 1;
         UIManager.instance.DegradePart(type, lv);
     }
 
@@ -105,24 +99,13 @@ public class BodyManager : MonoBehaviour
     { 
         return bodyParts.Find(p => p.partType == type); 
     }
-
-    // get dgrade level of body part
-    public int GetDegradeLevel(BodyPartType type)
-    {
-        if (bodyPartDegradeLv.ContainsKey(type))
-        {
-            return bodyPartDegradeLv[type];
-        }
-        return 0; // 파괴된 부위면 0 취급
-    }
-
+    
     // return a random alive body part
     public BodyPartType? GetRandomActiveBodyPart()
     {
-        // get alive body parts and make list
-        List<BodyPartType> activeParts = bodyPartDegradeLv
-            .Where(part => part.Value > 0)
-            .Select(part => part.Key)
+        List<BodyPartType> activeParts = bodyPartsDegradeLv
+            .Where(k => !k.isBroken)
+            .Select(k => k.partType) // (주의) 여기 변수명이 partType인지 type인지 확인하세요!
             .ToList();
 
         // if all parts broken? Dead

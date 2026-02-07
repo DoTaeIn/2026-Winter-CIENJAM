@@ -8,15 +8,15 @@ public enum BodyPartType { LeftArm, RightArm, LeftLeg, RightLeg, Head } // Head,
 public class BodyPart : MonoBehaviour
 {
     public BodyPartType partType; // � ��������
-    float MaxHp = 50.0f;
+    float MaxHp = 40.0f;
     private float prevHp;
-    private float currHp;
+    [SerializeField] private float currHp;
     public bool isBroken;
 
     public event Action<BodyPartType> OnPartBroken;
     public event Action<BodyPartType> OnPartRestore;
 
-    public UnityEvent<BodyPartType> onPartDegradeEvent = new UnityEvent<BodyPartType>();
+    public UnityEvent<BodyPartType, int> onPartDegradeEvent = new UnityEvent<BodyPartType, int>();
 
     public void Init()
     {
@@ -28,18 +28,17 @@ public class BodyPart : MonoBehaviour
     public void TakeDamage(float dmg)
     {
         if (isBroken) return;
-        else
-        { 
-            prevHp = currHp;
-            currHp = prevHp - dmg;
-            if(currHp <= 0)
-            {
-                currHp = 0;
-                isBroken = true;
-                OnPartBroken?.Invoke(partType);
-            }
+        
+        prevHp = currHp;
+        currHp = prevHp - dmg;
+        if(currHp <= 0)
+        {
+            currHp = 0;
+            isBroken = true;
+            OnPartBroken?.Invoke(partType);
         }
-        if(currHp / 10 != prevHp / 10) onPartDegradeEvent?.Invoke(partType);
+        
+        onPartDegradeEvent?.Invoke(partType, (int)(currHp / 10));
     }
 
     // ȸ��
