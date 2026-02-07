@@ -14,8 +14,12 @@ public class CharacterAnimationTester : MonoBehaviour, IAnimatableCharacter
     public event Action<CharacterPartType> OnPartAttached;
     public event Action<CharacterPartType> OnPartDetached;
 
+
+    public float speed;
+    public float timeScale = 1f;
     public bool isDetaching = true;
 
+    
     Rigidbody2D _rigidbody;
     bool _onAir;
 
@@ -29,7 +33,7 @@ public class CharacterAnimationTester : MonoBehaviour, IAnimatableCharacter
         moveDirection = 0f;
         if (Keyboard.current.leftArrowKey.isPressed) moveDirection = -1f;
         if (Keyboard.current.rightArrowKey.isPressed) moveDirection = 1f;
-        _rigidbody.linearVelocityX = moveDirection * 5f;
+        _rigidbody.linearVelocityX = moveDirection * speed;
         
         isFalling = _rigidbody.linearVelocityY < 0f;
         if (Keyboard.current.upArrowKey.wasPressedThisFrame) _rigidbody.linearVelocityY = 10f;
@@ -41,6 +45,8 @@ public class CharacterAnimationTester : MonoBehaviour, IAnimatableCharacter
         if (Keyboard.current.fKey.wasPressedThisFrame) func?.Invoke(CharacterPartType.BackLeg);
         
         GroundCheck();
+
+        Time.timeScale = timeScale;
     }
 
     void GroundCheck()
