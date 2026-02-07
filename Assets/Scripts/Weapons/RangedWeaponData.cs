@@ -3,8 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Bow", menuName = "Weapon/Bow")]
 public class RangedWeaponData : WeaponData
 {
-    public GameObject projectilePrefab; // È­»ì ÇÁ¸®ÆÕ
-    private float projectileSpeed = 10f;
+    public float projectileSpeed = 30f;
     public override void Attack(Transform firePos, Vector2 targetPos, LayerMask enemyLayer)
     {
         Debug.Log("Bow attack!");

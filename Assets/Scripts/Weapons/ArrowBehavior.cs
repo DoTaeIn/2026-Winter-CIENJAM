@@ -40,9 +40,10 @@ public class ArrowBehavior : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
+            Debug.Log("Hit!");
             // 충돌한 적에게 피해 입히는 로직 추가
+            ReturnToPool();
         }
-        ReturnToPool();
     }
 
     // 풀로 반납하는 함수
