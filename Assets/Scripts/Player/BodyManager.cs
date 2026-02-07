@@ -8,8 +8,10 @@ public class BodyManager : MonoBehaviour
 {
     [Header("Body Parts")]
     public List<BodyPart> bodyParts = new List<BodyPart>();
-    
+
     //private float height; //raycast 용 키 높이, 다리 파괴되면 변동 가능
+    public event Action<BodyPartType> OnBodyPartBroken;
+    public event Action<BodyPartType> OnBodyPartRestored;
 
     private void Start()
     {
@@ -35,13 +37,13 @@ public class BodyManager : MonoBehaviour
     // 부위 파괴 시 처리
     private void HandlePartBroken(BodyPartType type)
     {
-
+        OnBodyPartBroken?.Invoke(type);
     }
 
     // 부위 복구 시 처리
     private void HandlePartRestore(BodyPartType type)
     {
-        
+        OnBodyPartRestored?.Invoke(type);
     }
 
     // --- 기능 제공 API ---
