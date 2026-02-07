@@ -36,12 +36,17 @@ public class ArrowBehavior : MonoBehaviour
     }
 
     // 충돌시
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.CompareTag("Enemy"))
+        if (other.CompareTag("Enemy"))
         {
             Debug.Log("Hit!");
             // 충돌한 적에게 피해 입히는 로직 추가
+            ReturnToPool();
+        }
+
+        if (other.CompareTag("Ground"))
+        {
             ReturnToPool();
         }
     }

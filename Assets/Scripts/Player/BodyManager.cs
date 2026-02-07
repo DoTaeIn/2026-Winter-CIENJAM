@@ -18,17 +18,17 @@ public class BodyManager : MonoBehaviour
         { BodyPartType.Head, 4 }
     };
     
-    //private float height; //raycast ¿ë Å° ³ôÀÌ, ´Ù¸® ÆÄ±«µÇ¸é º¯µ¿ °¡´É
+    //private float height; //raycast ï¿½ï¿½ Å° ï¿½ï¿½ï¿½ï¿½, ï¿½Ù¸ï¿½ ï¿½Ä±ï¿½ï¿½Ç¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     
 
     private void Start()
     {
-        // bodypart¸¶´Ù ÃÊ±âÈ­ & ÀÌº¥Æ® ¿¬°á
+        // bodypartï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­ & ï¿½Ìºï¿½Æ® ï¿½ï¿½ï¿½ï¿½
         foreach (var part in bodyParts)
         {
             part.Init();
-            part.OnPartBroken += HandlePartBroken; // ÆÄ±« ÀÌº¥Æ® ¿¬°á
-            part.OnPartRestore += HandlePartRestore; // º¹±¸ ÀÌº¥Æ® ¿¬°á
+            part.OnPartBroken += HandlePartBroken; // ï¿½Ä±ï¿½ ï¿½Ìºï¿½Æ® ï¿½ï¿½ï¿½ï¿½
+            part.OnPartRestore += HandlePartRestore; // ï¿½ï¿½ï¿½ï¿½ ï¿½Ìºï¿½Æ® ï¿½ï¿½ï¿½ï¿½
         }
     }
 
@@ -50,7 +50,7 @@ public class BodyManager : MonoBehaviour
         UIManager.instance.DegradePart(type, lv);
     }
 
-    // µ¥¹ÌÁö Ã³¸®
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½
     public void ApplyDamageToPart(BodyPartType type, float damage)
     {
         var part = bodyParts.Find(p => p.partType == type);
@@ -60,33 +60,33 @@ public class BodyManager : MonoBehaviour
         }
     }
 
-    // ºÎÀ§ ÆÄ±« ½Ã Ã³¸®
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½Ä±ï¿½ ï¿½ï¿½ Ã³ï¿½ï¿½
     private void HandlePartBroken(BodyPartType type)
     {
-
+        OnBodyPartBroken?.Invoke(type);
     }
 
-    // ºÎÀ§ º¹±¸ ½Ã Ã³¸®
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ã³ï¿½ï¿½
     private void HandlePartRestore(BodyPartType type)
     {
-        
+        OnBodyPartRestored?.Invoke(type);
     }
 
-    // --- ±â´É Á¦°ø API ---
-    // ´Ù¸® »óÅÂ¿¡ µû¶ó ÀÌµ¿ ¼Óµµ ¹èÀ² ¹ÝÈ¯
+    // --- ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ API ---
+    // ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½Â¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ ï¿½Óµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
     public float GetMovementSpeedMultiplier()
     {
         bool leftLegOk = !GetPart(BodyPartType.LeftLeg).isBroken;
         bool rightLegOk = !GetPart(BodyPartType.RightLeg).isBroken;
 
-        if (leftLegOk && rightLegOk) return 1.0f; // µÑ´Ù ¸ÖÂÄ : 100%
-        if (leftLegOk || rightLegOk) return 0.5f; // ´Ù¸® ÇÏ³ª : 50% ¼Óµµ
-        return 0.1f; // µÑ´Ù ºÎ»ó : 10% ¼Óµµ
-        // µÎ¼ÕorÇÑ¼Õ Â÷ÀÌµµ ÁÙ¼öÀÖÀ½
+        if (leftLegOk && rightLegOk) return 1.0f; // ï¿½Ñ´ï¿½ ï¿½ï¿½ï¿½ï¿½ : 100%
+        if (leftLegOk || rightLegOk) return 0.5f; // ï¿½Ù¸ï¿½ ï¿½Ï³ï¿½ : 50% ï¿½Óµï¿½
+        return 0.1f; // ï¿½Ñ´ï¿½ ï¿½Î»ï¿½ : 10% ï¿½Óµï¿½
+        // ï¿½Î¼ï¿½orï¿½Ñ¼ï¿½ ï¿½ï¿½ï¿½Ìµï¿½ ï¿½Ù¼ï¿½ï¿½ï¿½ï¿½ï¿½
     }
 
-    // ÇöÀç »ç¿ë °¡´ÉÇÑ ¼ÕÀÇ °³¼ö ¹ÝÈ¯
-    // ³ªÁß¿¡ ¾ç¼Õ ¹«±â »ç¿ë °¡´ÉÇÑÁö È®ÀÎÇÒ ‹š »ç¿ë °¡´É 
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
+    // ï¿½ï¿½ï¿½ß¿ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
     public int GetWorkingArmCount()
     {
         int count = 0;
