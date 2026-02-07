@@ -54,6 +54,7 @@ public class CharacterAnimator : MonoBehaviour
 
             _parts[partType] = new CharacterPart
             {
+                gameObject = partObject,
                 animator = partObject.GetComponent<Animator>(),
                 enabled = true,
             };
@@ -80,40 +81,44 @@ public class CharacterAnimator : MonoBehaviour
     {
         if (_character.moveDirection > 0) transform.localScale = Vector3.one;
         else if (_character.moveDirection < 0) transform.localScale = new Vector3(-1, 1, 1);
-        
-        if (_onAir)
-            AnimateOnAir();
-        else
-            AnimateOnGround();
-        
-        SyncAnimationState(CharacterPartType.BackArm, CharacterPartType.Torso);
-        SyncAnimationState(CharacterPartType.FrontArm, CharacterPartType.Torso);
-        SyncAnimationState(CharacterPartType.BackLeg, CharacterPartType.Torso);
-        SyncAnimationState(CharacterPartType.FrontLeg, CharacterPartType.Torso);
-    }
 
-    void AnimateOnAir()
-    {
-        if (_character.isFalling)
-            Play(CharacterPartType.Torso, "JumpDown");
-        else
-            Play(CharacterPartType.Torso, "JumpUp");
-    }
-    void AnimateOnGround()
-    {
-
-        
-        if (IsPlaying(CharacterPartType.Torso, "Land")) return;
-
-        if (legCount == 1) Play(CharacterPartType.Torso, "");
-
-        if (_character.moveDirection == 0)
+        bool move = _character.moveDirection != 0.0f;
+        string torsoState = (legCount, _onAir) switch
         {
-            Play(CharacterPartType.Torso, "Idle");
+            (0, _) => "Stop",
+            (1,false) when !move => "OneLegIdle",
+            (2,false) when !move => "Idle",
+            (1,false) => "Walk",
+            (2,false)  => "Run",
+            (_,true) => _character.isFalling ? "JumpDown" : "JumpUp",
+            _ => "Undefined"
+        };
+        
+        if (!IsPlaying(CharacterPartType.Torso, "Land") || legCount < 2)
+        {
+            Play(CharacterPartType.Torso, torsoState);
+        }
+
+        if (torsoState == "OneLegIdle")
+        {
+            Play(CharacterPartType.BackArm, torsoState);
+            Play(CharacterPartType.FrontArm, torsoState);
+            Play(CharacterPartType.BackLeg, torsoState);
+            Play(CharacterPartType.FrontLeg, torsoState);
+        }
+        else if(torsoState == "Stop")
+        {
+            if (move)
+            {
+                
+            }
         }
         else
         {
-            Play(CharacterPartType.Torso, "Run");
+            SyncAnimationState(CharacterPartType.BackArm, CharacterPartType.Torso);
+            SyncAnimationState(CharacterPartType.FrontArm, CharacterPartType.Torso);
+            SyncAnimationState(CharacterPartType.BackLeg, CharacterPartType.Torso);
+            SyncAnimationState(CharacterPartType.FrontLeg, CharacterPartType.Torso);
         }
     }
 
@@ -156,6 +161,7 @@ public class CharacterAnimator : MonoBehaviour
 
         animator.Play(stateHash);
     }
+
     bool IsPlaying(CharacterPartType partType, string stateName, bool considerFinishedAsPlaying = false) =>
         IsPlaying(partType, Animator.StringToHash(stateName));
     bool IsPlaying(CharacterPartType partType, int stateHash, bool considerFinishedAsPlaying = false)
@@ -181,5 +187,16 @@ public class CharacterAnimator : MonoBehaviour
         if (!toAnimator.HasState(0, fromState.shortNameHash)) return;
 
         toAnimator.Play(fromState.shortNameHash, 0, fromState.normalizedTime);
+    }
+    void SyncAnimationTiming(CharacterPartType syncTo, CharacterPartType syncFrom)
+    {
+        if (syncFrom == syncTo) return;
+        if (!_parts[syncFrom].enabled || !_parts[syncTo].enabled) return;
+
+        var toAnimator = _parts[syncTo].animator;
+        var fromState = _parts[syncFrom].animator.GetCurrentAnimatorStateInfo(0);
+        var toState = _parts[syncTo].animator.GetCurrentAnimatorStateInfo(0);
+        
+        toAnimator.Play(toState.shortNameHash, 0, fromState.normalizedTime);
     }
 }

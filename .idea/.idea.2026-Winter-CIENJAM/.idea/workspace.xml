@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15d1f8bd-b8fd-4ec8-83a7-7dc5b9c702c3" name="Changes" comment="Merge remote-tracking branch 'origin/animation' into animation" />
+    <list default="true" id="15d1f8bd-b8fd-4ec8-83a7-7dc5b9c702c3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.2026-Winter-CIENJAM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2026-Winter-CIENJAM/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animation/Idle/Front Arm_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animation/Idle/Front Arm_Idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AnimationTestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AnimationTestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterAnimationTester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterAnimationTester.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterAnimator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +55,7 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="39KSOBHR3oIlCSpMQaepdHhzPRJ" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -61,7 +68,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "animation",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -171,6 +178,6 @@
     <MESSAGE value="...." />
     <MESSAGE value="Merge remote-tracking branch 'origin/animation' into animation&#10;&#10;# Conflicts:&#10;#&#9;Assets/Scripts/CharacterAnimationTester.cs&#10;#&#9;Assets/Scripts/CharacterAnimator.cs" />
     <MESSAGE value="Merge remote-tracking branch 'origin/animation' into animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/animation' into animation" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
