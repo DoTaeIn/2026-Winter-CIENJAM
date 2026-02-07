@@ -67,7 +67,7 @@ public class IceFloorZone : MonoBehaviour
                 }
 
                 Debug.Log($"{enemy.name} ice damage: {zoneDamage}");
-                // enemy.GetComponent<EnemyHealth>()?.TakeDamage(zoneDamage);
+                enemy.GetComponent<Enemy>()?.TakeDamage(zoneDamage);
             }
 
             // 설정한 간격만큼 대기

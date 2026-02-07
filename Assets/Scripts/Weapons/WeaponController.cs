@@ -79,7 +79,7 @@ public class WeaponController : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        if (currentWeapon is not RangedWeaponData)
+        if (!(currentWeapon is RangedWeaponData))
         {
             Gizmos.color = Color.red;
 
@@ -91,7 +91,7 @@ public class WeaponController : MonoBehaviour
             // 방향 벡터 설정 (오른쪽이면 (1,0), 왼쪽이면 (-1,0))
             Vector2 facingDir = isRight ? Vector2.right : Vector2.left;
 
-            Vector3 center = transform.position + (Vector3)(facingDir * 2.0f);
+            Vector3 center = transform.position + new Vector3(0f,1f,0f) + (Vector3)(facingDir * 1.0f);
 
             // 회전 없이 그냥 그리기
             Gizmos.DrawWireCube(center, new Vector2(1.0f, 2.0f));

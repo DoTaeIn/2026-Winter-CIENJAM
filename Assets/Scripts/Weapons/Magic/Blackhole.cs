@@ -46,13 +46,15 @@ public class Blackhole : SpellBehavior
             {
                 // 끌어당김
                 Vector2 direction = (transform.position - enemy.transform.position).normalized;
+                Vector2 distance = (transform.position - enemy.transform.position);
 
                 // Rigidbody 힘으로 당기기 (물리 적용)
                 Rigidbody2D rb = enemy.GetComponent<Rigidbody2D>();
                 if (rb != null)
                 {
                     // 거리가 가까울수록 더 세게 당기려면 거리 계산 추가 가능
-                    rb.AddForce(direction * pullForce);
+                    //rb.AddForce(direction * pullForce);
+                    rb.AddForce(distance * pullForce);
                 }
 
                 // 강제 이동
@@ -68,7 +70,7 @@ public class Blackhole : SpellBehavior
         {
             // 실제 데미지 적용 코드
             Debug.Log($"{other.name} 블랙홀 데미지 받음!");
-            // other.GetComponent<EnemyHealth>()?.TakeDamage(damagePerSecond * damageTickRate);
+            other.GetComponent<Enemy>()?.TakeDamage(damagePerSecond * damageTickRate);
 
             nextDamageTime = Time.time + damageTickRate;
         }

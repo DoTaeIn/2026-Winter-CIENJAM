@@ -8,6 +8,8 @@ public class ArrowBehavior : MonoBehaviour
     private IObjectPool<ArrowBehavior> _pool;
     private Rigidbody2D rb;
     private TrailRenderer trail;
+    [HideInInspector]
+    public float dmg;
 
     void Awake()
     {
@@ -41,7 +43,7 @@ public class ArrowBehavior : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             Debug.Log("Hit!");
-            // 충돌한 적에게 피해 입히는 로직 추가
+            other.GetComponent<Enemy>()?.TakeDamage(dmg);
             ReturnToPool();
         }
 
