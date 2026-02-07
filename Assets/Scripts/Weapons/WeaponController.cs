@@ -26,7 +26,10 @@ public class WeaponController : MonoBehaviour
         // 무기 교체 체크
         if (Input.GetKeyDown(KeyCode.R))
         {
-            EquipWeapon(subWeapon);
+            if(currentWeapon == mainWeapon)
+                EquipWeapon(subWeapon);
+            else 
+                EquipWeapon(mainWeapon);
         }
 
         // 공격 쿨타임 체크

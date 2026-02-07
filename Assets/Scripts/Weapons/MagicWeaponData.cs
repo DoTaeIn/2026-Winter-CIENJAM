@@ -42,13 +42,15 @@ public class MagicWeaponData : WeaponData
         }
 
         Vector2 spawnLocation = (Vector2)firePos.position + (direction.normalized * distance);
-        Instantiate(spellPrefab, spawnLocation, Quaternion.identity);
+        GameObject spellObject = Instantiate(spellPrefab, spawnLocation, Quaternion.identity);
+        spellObject.GetComponent<SpellBehavior>().Initialize(targetPos, damage);
     }
 
     private void SpawnProjectileSpell(Transform firePos, Vector2 targetPos)
     {
         GameObject spell = Instantiate(spellPrefab, firePos.position, Quaternion.identity);
-        Vector2 dir = (targetPos - (Vector2)firePos.position).normalized;
-        spell.GetComponent<Rigidbody2D>().linearVelocity = dir * 10f; // 속도는 변수로 빼는게 좋음
+        //Vector2 dir = (targetPos - (Vector2)firePos.position).normalized;
+        //spell.GetComponent<Rigidbody2D>().linearVelocity = dir * 10f;
+        spell.GetComponent<SpellBehavior>().Initialize(targetPos, damage);
     }
 }

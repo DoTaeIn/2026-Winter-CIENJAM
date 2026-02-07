@@ -15,8 +15,6 @@ public class Blackhole : SpellBehavior
     {
         Debug.Log("Cast Blackhole!");
         base.Initialize(targetPos, dmg);
-        Vector2 dir = (targetPos - (Vector2)transform.position).normalized;
-        GetComponent<Rigidbody2D>().linearVelocity = dir * speed;
     }
 
     void Start()
@@ -35,15 +33,6 @@ public class Blackhole : SpellBehavior
         if (other.CompareTag("Enemy"))
         {
             // 적에게 데미지 주는 로직
-
-            //폭발 이펙트?
-            Destroy(gameObject);
-        }
-
-        if (other.CompareTag("Ground"))
-        {
-
-            Destroy(gameObject);
         }
     }
 

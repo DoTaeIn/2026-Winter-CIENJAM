@@ -608,6 +608,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BodyPart
   partType: 2
   isBroken: 0
+  onPartBrokenEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &659124713
 SpriteRenderer:
   serializedVersion: 2
@@ -1173,6 +1176,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BodyPart
   partType: 0
   isBroken: 0
+  onPartBrokenEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &1394398899
 SpriteRenderer:
   serializedVersion: 2
@@ -1280,6 +1286,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BodyPart
   partType: 3
   isBroken: 1
+  onPartBrokenEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &1481510970
 SpriteRenderer:
   serializedVersion: 2
@@ -1646,6 +1655,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BodyPart
   partType: 1
   isBroken: 0
+  onPartBrokenEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &1735684853
 SpriteRenderer:
   serializedVersion: 2
@@ -1874,11 +1886,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4563829844876763258, guid: 3580d38158d96e24f9e28046b4f9f9f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.6219
+      value: 8.34
       objectReference: {fileID: 0}
     - target: {fileID: 4563829844876763258, guid: 3580d38158d96e24f9e28046b4f9f9f1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.4999
+      value: 5.47
       objectReference: {fileID: 0}
     - target: {fileID: 4563829844876763258, guid: 3580d38158d96e24f9e28046b4f9f9f1, type: 3}
       propertyPath: m_LocalPosition.z
