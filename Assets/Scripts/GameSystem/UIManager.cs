@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class UIObj
@@ -10,14 +11,18 @@ public class UIObj
     
 }
 
+public enum ImageType
+{
+    Head,
+    Arm,
+    Leg
+}
+
 [System.Serializable]
 public class BodyImgs
 {
-    public BodyPartType partType;
-    public int degradeLv = 4;
-    public Sprite head;
-    public Sprite arm;
-    public Sprite leg;
+    public ImageType partType;
+    public List<Sprite> sprites;    
 }
 
 public class UIManager : MonoBehaviour
@@ -28,11 +33,11 @@ public class UIManager : MonoBehaviour
     public List<BodyImgs> bodyImgs;
 
     [Header("BodyPart Imgs")] 
-    private SpriteRenderer head;
-    private SpriteRenderer Larm;
-    private SpriteRenderer Rarm;
-    private SpriteRenderer Lleg;
-    private SpriteRenderer Rleg;
+    [SerializeField] private Image head;
+    [SerializeField] private Image Larm;
+    [SerializeField] private Image Rarm;
+    [SerializeField] private Image Lleg;
+    [SerializeField] private Image Rleg;
 
     private void Awake()
     {
@@ -64,22 +69,42 @@ public class UIManager : MonoBehaviour
     public void DegradePart(BodyPartType type, int degradeLv)
     {
         degradeLv = Math.Clamp(degradeLv, 0, 4);
+
+        // 1. BodyPartType을 ImageType(Arm, Leg, Head)으로 변환
+        ImageType targetImageType = type switch
+        {
+            BodyPartType.LeftArm or BodyPartType.RightArm => ImageType.Arm,
+            BodyPartType.LeftLeg or BodyPartType.RightLeg => ImageType.Leg,
+            BodyPartType.Head => ImageType.Head // 나머지는 Head로 가정
+        };
+
+        // 2. 변환된 타입으로 리스트에서 검색
+        BodyImgs target = bodyImgs.Find(x => x.partType == targetImageType);
+    
+        // (안전장치) 찾는 데이터가 없으면 함수 종료
+        if (target == null) 
+        {
+            Debug.LogError($"이미지 데이터를 찾을 수 없습니다: {targetImageType}");
+            return; 
+        }
+
+        // 3. 스프라이트 적용
         switch (type)
         {
-            case BodyPartType.LeftArm:
-                Larm.sprite = bodyImgs[degradeLv].arm;
-                break;
             case BodyPartType.Head:
-                head.sprite = bodyImgs[degradeLv].head;
+                head.sprite = target.sprites[degradeLv];
                 break;
-            case BodyPartType.LeftLeg:
-                Lleg.sprite = bodyImgs[degradeLv].leg;
+            case BodyPartType.LeftArm:
+                Larm.sprite = target.sprites[degradeLv];
                 break;
             case BodyPartType.RightArm:
-                Rarm.sprite = bodyImgs[degradeLv].arm;
+                Rarm.sprite = target.sprites[degradeLv];
+                break;
+            case BodyPartType.LeftLeg:
+                Lleg.sprite = target.sprites[degradeLv]; 
                 break;
             case BodyPartType.RightLeg:
-                Rleg.sprite = bodyImgs[degradeLv].leg;
+                Rleg.sprite = target.sprites[degradeLv];
                 break;
         }
     }
