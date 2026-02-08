@@ -107,11 +107,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Chest
   lootTable:
-  - name: Test
-    prefab: {fileID: 0}
-    dropChance: 19
-  - name: Test2
-    prefab: {fileID: 0}
+  - name: Fire
+    weapon: {fileID: 11400000, guid: dd6b689a65266bb46aa5a144b66a4d8e, type: 2}
+    dropChance: 39
+  - name: Ice
+    weapon: {fileID: 11400000, guid: 024d29441d002c04dba7c7dc7290b622, type: 2}
+    dropChance: 39
+  - name: Blackhole
+    weapon: {fileID: 11400000, guid: fc16b9927594ca64b8e25e5faca8862a, type: 2}
+    dropChance: 39
+  - name: Ice
+    weapon: {fileID: 0}
+    dropChance: 39
+  - name: Bow
+    weapon: {fileID: 11400000, guid: c39d5c05bea00504b9a200146e72e7ea, type: 2}
+    dropChance: 39
+  - name: Sword
+    weapon: {fileID: 11400000, guid: 958635b892bf68e479add8a8c2f0c2ef, type: 2}
     dropChance: 39
 --- !u!61 &1840781254312275005
 BoxCollider2D:

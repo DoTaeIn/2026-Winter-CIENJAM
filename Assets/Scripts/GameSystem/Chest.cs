@@ -6,7 +6,7 @@ using UnityEngine;
 public class LootItem
 {
     public string name;
-    public GameObject prefab;
+    public WeaponData weapon;
     [Range(1, 100)] 
     public int dropChance;
 }
@@ -29,7 +29,7 @@ public class Chest : MonoBehaviour
         {
             if (randomValue < item.dropChance)
             {
-                SpawnItem(item.prefab);
+                //SpawnItem(item.prefab);
                 return;
             }
             randomValue -= item.dropChance;
@@ -47,5 +47,4 @@ public class Chest : MonoBehaviour
             Debug.Log("Nothing here");
         }
     }
-    
 }

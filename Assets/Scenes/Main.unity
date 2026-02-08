@@ -5469,7 +5469,7 @@ GameObject:
   - component: {fileID: 1356628487}
   m_Layer: 3
   m_Name: Map
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10823,10 +10823,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b597701e64dd045956e3ef612e161c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponController
-  currentWeapon: {fileID: 0}
-  mainWeapon: {fileID: 0}
-  subWeapon: {fileID: 0}
-  firePos: {fileID: 0}
+  currentWeapon: {fileID: 11400000, guid: dd6b689a65266bb46aa5a144b66a4d8e, type: 2}
+  mainWeapon: {fileID: 11400000, guid: dd6b689a65266bb46aa5a144b66a4d8e, type: 2}
+  subWeapon: {fileID: 11400000, guid: c39d5c05bea00504b9a200146e72e7ea, type: 2}
+  firePos: {fileID: 2036745676}
   weaponRenderer: {fileID: 0}
   enemyLayer:
     serializedVersion: 2
@@ -12038,7 +12038,7 @@ GameObject:
   - component: {fileID: 2096469275}
   m_Layer: 3
   m_Name: Border
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

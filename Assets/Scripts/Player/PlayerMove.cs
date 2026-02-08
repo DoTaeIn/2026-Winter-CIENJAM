@@ -30,6 +30,9 @@ public class PlayerMove : MonoBehaviour, IAnimatableCharacter
     private BodyManager bm;
     public LayerMask groundLayer;
 
+
+    private Chest nearbyChest;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -83,10 +86,17 @@ public class PlayerMove : MonoBehaviour, IAnimatableCharacter
                 Jump();
             }
         }
+
+        if (nearbyChest != null && UnityEngine.Input.GetKeyDown(KeyCode.E))
+        {
+            nearbyChest.UnlockChest(); // 상자 열기
+            nearbyChest = null; // 열었으니 더 이상 상호작용 안 함)
+        }
+
+
+        if (isNearDoor) if(UnityEngine.Input.GetKeyDown(KeyCode.E)) GameSystem.instance.MoveTo(this.gameObject, new Vector3(0, 0,0), GameSystem.instance.isRest);
         
-        
-        if(isNearDoor) if(UnityEngine.Input.GetKeyDown(KeyCode.E)) GameSystem.instance.MoveTo(this.gameObject, new Vector3(0, 0,0), GameSystem.instance.isRest);
-        
+
     }
     
     
@@ -114,12 +124,23 @@ public class PlayerMove : MonoBehaviour, IAnimatableCharacter
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("OnTriggerEnter2D");
-        if(other.CompareTag("Door")) isNearDoor = true;
+        if (other.CompareTag("Chest"))
+        { 
+            nearbyChest = other.GetComponent<Chest>();
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
+        if (other.CompareTag("Chest"))
+        {
+            Chest exitChest = other.GetComponent<Chest>();
+            if (exitChest == nearbyChest)
+            {
+                nearbyChest = null; 
+            }
+        }
+
         Debug.Log("OnTriggerExit2D");
         if(other.CompareTag("Door")) isNearDoor = false;
     }
