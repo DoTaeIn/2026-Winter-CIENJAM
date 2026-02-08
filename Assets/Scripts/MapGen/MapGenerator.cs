@@ -1,7 +1,10 @@
+using System;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using System.Collections.Generic;
-using UnityEngine.Events; // 리스트 사용을 위해 필수
+using System.Linq;
+using UnityEngine.Events;
+using Random = UnityEngine.Random; // 리스트 사용을 위해 필수
 
 public class MapGenerator : MonoBehaviour
 {
@@ -38,8 +41,13 @@ public class MapGenerator : MonoBehaviour
     [SerializeField] private int minY = 5;
     [SerializeField] private int maxY = 7;
     [SerializeField] private int maxX = 6;
+    
+    [Header("Door")]
+    [SerializeField] private GameObject doorPrefab;
+    GameObject door;
 
     public UnityEvent onMapGenerated;
+
 
     void Start()
     {
@@ -162,6 +170,8 @@ public class MapGenerator : MonoBehaviour
                 wallTilemap.SetTile(new Vector3Int(x, bottomY + y, 0), ruleTile);
             }
         }
+        
+        door = Instantiate(doorPrefab, new Vector3(-0, bottomY + 3, 0), Quaternion.identity);
     }
 
     void DrawBackground(int width, int height)
@@ -195,5 +205,14 @@ public class MapGenerator : MonoBehaviour
                 Destroy(child.gameObject);
             }
         }
+
+        List<Chest> chests = FindObjectsByType<Chest>(FindObjectsInactive.Exclude, FindObjectsSortMode.InstanceID).ToList();
+
+        foreach (Chest chest in chests)
+        {
+            Destroy(chest.gameObject);
+        }
+        
+        Destroy(door);
     }
 }
