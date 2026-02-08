@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TestGlow
-  m_Shader: {fileID: 4800000, guid: caa3ce7d9aaa70c46bdd978e4d0f5ba1, type: 3}
+  m_Name: Fireball
+  m_Shader: {fileID: 4800000, guid: bed9e3fd73078ac408c72e233ff62ae7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -41,10 +41,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - PixelSnap: 0
     - _EnableExternalAlpha: 0
+    - _Intensity: 2
     - _ZWrite: 0
     m_Colors:
-    - _Color: {r: 7.4412985, g: 1.3967481, b: 0.70200914, a: 1}
+    - _Color: {r: 1.878042, g: 1.878042, b: 1.878042, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _White: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
