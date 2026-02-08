@@ -18,7 +18,7 @@
             Pass replace
         }
 
-        Blend SrcAlpha OneMinusSrcAlpha, One OneMinusSrcAlpha
+        Blend SrcAlpha OneMinusSrcAlpha, SrcAlpha OneMinusSrcAlpha
         Cull Back
         ZWrite On
 
