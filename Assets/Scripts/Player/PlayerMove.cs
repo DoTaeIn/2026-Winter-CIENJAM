@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 using UnityEngine.Windows;
 
 
@@ -22,10 +23,12 @@ public class PlayerMove : MonoBehaviour, IAnimatableCharacter
     public float moveSpeed = 5.0f;
 
     [SerializeField] private bool isGrounded;
+    private bool isFloating = false;
+    [SerializeField] private bool isNearDoor;
     private Rigidbody2D rb;
     private Collider2D col;
     private BodyManager bm;
-    public LayerMask groundLayer; // ���⿡ �� ���̾� ����
+    public LayerMask groundLayer;
 
     void Awake()
     {
@@ -38,29 +41,52 @@ public class PlayerMove : MonoBehaviour, IAnimatableCharacter
     {
         isFalling = rb.linearVelocityY < 0f;
         
-        float rayLength = col.bounds.extents.y - col.offset.y + 0.1f;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector3.down, 1.3f, groundLayer);
-    
+        float rayLength = col.bounds.extents.y + 0.1f;
+        RaycastHit2D hit = Physics2D.Raycast(col.bounds.center, Vector3.down, rayLength, groundLayer);
+        //Debug.Log(hit.collider.gameObject.name);
+        
         bool currentGrounded = (hit.collider != null);
         
-        Debug.DrawRay(transform.position, Vector2.down * rayLength, currentGrounded ? Color.green : Color.red);
+        Debug.DrawRay(col.bounds.center, Vector2.down * rayLength, currentGrounded ? Color.green : Color.red);
         
         if (!isGrounded && currentGrounded && rb.linearVelocity.y <= 0.1f)
         {
             Debug.Log("Landed!");
             OnLand?.Invoke();
+        
+            isFalling = false;
         }
         
         isGrounded = currentGrounded;
+        
+        if (Math.Abs(rb.linearVelocity.y) > 0.1f && !isGrounded)
+        {
+            if (!isFloating) 
+            {
+                Debug.Log("Jump Start (Physics Based)!");
+                OnJump?.Invoke(); 
+                
+                isFloating = true; 
+            }
+        }
+        else 
+        {
+            isFloating = false;
+        }
+        
+        
         
         if (UnityEngine.Input.GetKeyDown(KeyCode.Space))
         {
             if (isGrounded)
             {
-                OnJump?.Invoke();
                 Jump();
             }
         }
+        
+        
+        if(isNearDoor) if(UnityEngine.Input.GetKeyDown(KeyCode.E)) GameSystem.instance.MoveTo(this.gameObject, new Vector3(0, 0,0), GameSystem.instance.isRest);
+        
     }
     
     
@@ -84,5 +110,17 @@ public class PlayerMove : MonoBehaviour, IAnimatableCharacter
     {
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("OnTriggerEnter2D");
+        if(other.CompareTag("Door")) isNearDoor = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        Debug.Log("OnTriggerExit2D");
+        if(other.CompareTag("Door")) isNearDoor = false;
     }
 }

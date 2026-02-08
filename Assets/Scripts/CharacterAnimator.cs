@@ -22,8 +22,6 @@ public class CharacterAnimator : MonoBehaviour
         public bool enabled;
     }
 
-    public CharacterAnimationAsset animationAsset;
-
     public CharacterParts<string> partNames = new CharacterParts<string>
     {
         backArm = "Back Arm",
@@ -45,8 +43,6 @@ public class CharacterAnimator : MonoBehaviour
 
         if (_character == null)
             Debug.LogError($"{nameof(IAnimatableCharacter)} component not found on the GameObject.");
-        if (animationAsset == null)
-            Debug.LogError($"{nameof(animationAsset)} is not assigned.");
 
         SetParts();
     }
