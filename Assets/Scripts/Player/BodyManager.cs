@@ -8,15 +8,21 @@ using UnityEngine;
 public class BodyManager : MonoBehaviour
 {
 
-    [Header("Body Parts")]
+    [Header("Body Parts")] 
     public List<BodyPart> bodyParts = new List<BodyPart>();
     private List<BodyPart> bodyPartsDegradeLv;
+
+    private PlayerMove move;
 
     public event Action<BodyPartType> OnBodyPartBroken;
     public event Action<BodyPartType> OnBodyPartRestored;
 
     //private float height; //raycast �� Ű ����, �ٸ� �ı��Ǹ� ���� ����
-    
+
+    private void Awake()
+    {
+        move =  GetComponent<PlayerMove>();
+    }
 
     private void Start()
     {
@@ -43,8 +49,22 @@ public class BodyManager : MonoBehaviour
             part.onPartDegradeEvent.RemoveListener(HandlePartDegraded);
     }
 
-    private void HandlePartDegraded(BodyPartType type, int lv)
+    private void HandlePartDegraded(BodyPartType type, float lv)
     {
+        if (lv == 0)
+        {
+            CharacterPartType charPart = type switch
+            {
+                BodyPartType.LeftArm  => CharacterPartType.FrontArm,
+                BodyPartType.RightArm => CharacterPartType.BackArm,
+                BodyPartType.LeftLeg  => CharacterPartType.FrontLeg,
+                BodyPartType.RightLeg => CharacterPartType.BackLeg,
+                BodyPartType.Head     => CharacterPartType.Torso,
+            };
+            
+            move.DetachPart(charPart);
+        }
+
         UIManager.instance.DegradePart(type, lv);
     }
 
@@ -77,14 +97,13 @@ public class BodyManager : MonoBehaviour
         bool leftLegOk = !GetPart(BodyPartType.LeftLeg).isBroken;
         bool rightLegOk = !GetPart(BodyPartType.RightLeg).isBroken;
 
-        if (leftLegOk && rightLegOk) return 1.0f; // �Ѵ� ���� : 100%
-        if (leftLegOk || rightLegOk) return 0.5f; // �ٸ� �ϳ� : 50% �ӵ�
-        return 0.1f; // �Ѵ� �λ� : 10% �ӵ�
-        // �μ�or�Ѽ� ���̵� �ټ�����
+        if (leftLegOk && rightLegOk) return 1.0f;
+        if (leftLegOk || rightLegOk) return 0.5f;
+        return 0.1f;
+
     }
 
-    // ���� ��� ������ ���� ���� ��ȯ
-    // ���߿� ��� ���� ��� �������� Ȯ���� �� ��� ���� 
+
     public int GetWorkingArmCount()
     {
         int count = 0;

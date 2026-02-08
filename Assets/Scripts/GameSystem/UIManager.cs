@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -38,6 +39,13 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Image Rarm;
     [SerializeField] private Image Lleg;
     [SerializeField] private Image Rleg;
+    
+    [Header("Body parts UI")]
+    [SerializeField] private TMP_Text headTxt;
+    [SerializeField] private TMP_Text lArmTxt;
+    [SerializeField] private TMP_Text rArmTxt;
+    [SerializeField] private TMP_Text lLegTxt;
+    [SerializeField] private TMP_Text rLegTxt;
 
     private void Awake()
     {
@@ -66,9 +74,9 @@ public class UIManager : MonoBehaviour
         return null;
     }
 
-    public void DegradePart(BodyPartType type, int degradeLv)
+    public void DegradePart(BodyPartType type, float degradeLv)
     {
-        degradeLv = Math.Clamp(degradeLv, 0, 4);
+        int lv = Math.Clamp((int)(degradeLv / 10), 0, 4);
 
         // 1. BodyPartType을 ImageType(Arm, Leg, Head)으로 변환
         ImageType targetImageType = type switch
@@ -87,24 +95,39 @@ public class UIManager : MonoBehaviour
             Debug.LogError($"이미지 데이터를 찾을 수 없습니다: {targetImageType}");
             return; 
         }
-
-        // 3. 스프라이트 적용
+        
+        string[] hexColors = new string[] { "#FFFFFF", "#FFD3D3", "#FF9494", "#FF4F4F", "#E50000" };
+        Color color = new  Color32(255, 255, 255, 255);
+        if (ColorUtility.TryParseHtmlString(hexColors[4-lv], out Color newColor))
+        {
+            color = newColor;
+        }
         switch (type)
         {
             case BodyPartType.Head:
-                head.sprite = target.sprites[degradeLv];
+                head.sprite = target.sprites[lv];
+                headTxt.text = $"{new[] { "파괴됨", "골절", "출혈 중", "가벼운 뇌진탕", "건강함" }[lv]} ({(degradeLv / 40.0f * 100):F0}%)";
+                headTxt.color = color;
                 break;
             case BodyPartType.LeftArm:
-                Larm.sprite = target.sprites[degradeLv];
+                Larm.sprite = target.sprites[lv];
+                lArmTxt.text = $"{new[] { "파괴됨", "골절", "찢어짐", "찰과상", "튼튼함" }[lv]} ({(degradeLv / 40.0f * 100):F0}%)";
+                lArmTxt.color = color;
                 break;
             case BodyPartType.RightArm:
-                Rarm.sprite = target.sprites[degradeLv];
+                Rarm.sprite = target.sprites[lv];
+                rArmTxt.text = $"{new[] { "파괴됨", "골절", "찢어짐", "찰과상", "튼튼함" }[lv]} ({(degradeLv / 40.0f * 100):F0}%)";
+                rArmTxt.color = color;
                 break;
             case BodyPartType.LeftLeg:
-                Lleg.sprite = target.sprites[degradeLv]; 
+                Lleg.sprite = target.sprites[lv];
+                lLegTxt.text = $"{new[] { "파괴됨", "골절", "깊은 상처", "염좌", "튼튼함" }[lv]} ({(degradeLv / 40.0f * 100):F0}%)";
+                lLegTxt.color = color;
                 break;
             case BodyPartType.RightLeg:
-                Rleg.sprite = target.sprites[degradeLv];
+                Rleg.sprite = target.sprites[lv];
+                rLegTxt.text = $"{new[] { "파괴됨", "골절", "깊은 상처", "염좌", "튼튼함" }[lv]} ({(degradeLv / 40.0f * 100):F0}%)";
+                rLegTxt.color = color;
                 break;
         }
     }
