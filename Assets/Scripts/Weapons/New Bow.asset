@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9987122df6894e34a88ba8529b6a9be2, type: 3}
   m_Name: New Bow
   m_EditorClassIdentifier: Assembly-CSharp::RangedWeaponData
-  weaponSprite: {fileID: 21300000, guid: 543fff9c6bee69649a543666c301ca86, type: 3}
+  weaponPrefab: {fileID: 0}
   weaponName: bow
-  damage: 10
+  damage: 4
   range: 1.5
   attackRate: 1
   projectileSpeed: 30

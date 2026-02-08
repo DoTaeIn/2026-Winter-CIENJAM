@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 339a4983d7850ad43903a54112936329, type: 3}
   m_Name: FireStaff
   m_EditorClassIdentifier: Assembly-CSharp::MagicWeaponData
-  weaponSprite: {fileID: -382720642, guid: 6d28f55f1b0572546b2632db94416d69, type: 3}
+  weaponPrefab: {fileID: 8162379969984446734, guid: 0ec9ea5501fddb547b63eea7ebb9b83d, type: 3}
   weaponName: Fire Staff
-  damage: 10
+  damage: 5
   range: 1.5
   attackRate: 1
+  hitboxSize: {x: 1, y: 1}
+  offsetDistance: 1
   magicType: 0
   spellPrefab: {fileID: 4480030739963785644, guid: 1d1419adc4dccac4caa4bf70eef7da73, type: 3}
   manaCost: 10

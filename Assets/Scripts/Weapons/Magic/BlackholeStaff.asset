@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 339a4983d7850ad43903a54112936329, type: 3}
   m_Name: BlackholeStaff
   m_EditorClassIdentifier: Assembly-CSharp::MagicWeaponData
-  weaponSprite: {fileID: -4238261132931420093, guid: 1a40184e1cc96404f897b0987b7d950d, type: 3}
+  weaponPrefab: {fileID: 407120822530611143, guid: 54995714db5c8164394f839330f80cc1, type: 3}
   weaponName: Blackhole Staff
-  damage: 10
+  damage: 5
   range: 1.5
   attackRate: 1
+  hitboxSize: {x: 1, y: 1}
+  offsetDistance: 1
   magicType: 1
   spellPrefab: {fileID: 1203617082036246684, guid: 3580d38158d96e24f9e28046b4f9f9f1, type: 3}
   manaCost: 20

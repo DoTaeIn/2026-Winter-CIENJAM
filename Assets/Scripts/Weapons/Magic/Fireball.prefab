@@ -108,6 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Fireball
   speed: 8
+  explodeRadius: 1
 --- !u!50 &3549095348377770055
 Rigidbody2D:
   serializedVersion: 5
@@ -193,4 +194,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88710ae3701f26443b9758c5de4bbdb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Fireball
-  speed: 8
+  speed: 15
+  explodeRadius: 1

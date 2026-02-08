@@ -144,4 +144,14 @@ public class PlayerMove : MonoBehaviour, IAnimatableCharacter
         Debug.Log("OnTriggerExit2D");
         if(other.CompareTag("Door")) isNearDoor = false;
     }
+
+    public void SwipeUp()
+    {
+        OnSwipeUp?.Invoke(CharacterPartType.FrontArm);
+    }
+    public void SwipeDown()
+    {
+        OnSwipeDown?.Invoke(CharacterPartType.FrontArm);
+    }
+
 }

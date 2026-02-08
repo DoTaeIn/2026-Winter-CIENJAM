@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "WeaponData", menuName = "Scriptable Objects/WeaponData")]
 public abstract class WeaponData : ScriptableObject
 {
-    public Sprite weaponSprite;
+    public GameObject weaponPrefab;
 
     public string weaponName = "Sword";
     public float damage = 10f;
