@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
 
-public class CharacterAnimationTester : MonoBehaviour, IAnimatableCharacter
+public class CharacterAnimationTester : MonoBehaviour, IAnimatableCharacter, IDamageable
 {
     public bool isFalling { get; private set; }
     public float moveDirection { get; private set; }
@@ -15,6 +15,8 @@ public class CharacterAnimationTester : MonoBehaviour, IAnimatableCharacter
 
     public event Action<CharacterPartType> OnPartAttached;
     public event Action<CharacterPartType> OnPartDetached;
+
+    public event Action OnDamaged;
 
 
     public float speed;
@@ -50,6 +52,11 @@ public class CharacterAnimationTester : MonoBehaviour, IAnimatableCharacter
         if (Keyboard.current.eKey.wasPressedThisFrame) OnSwipeDown?.Invoke(CharacterPartType.BackArm);
         if (Keyboard.current.rKey.wasPressedThisFrame) OnSwipeUp?.Invoke(CharacterPartType.BackArm);
 
+        if (Mouse.current.leftButton.wasPressedThisFrame) OnDamaged?.Invoke();
+        
+        if (Keyboard.current.tKey.wasPressedThisFrame) ScreenFader.FadeIn(0.5f);
+        if (Keyboard.current.yKey.wasPressedThisFrame) ScreenFader.FadeOut(0.5f);
+        
         GroundCheck();
     }
 

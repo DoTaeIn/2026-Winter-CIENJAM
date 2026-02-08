@@ -1,21 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.Properties;
 using UnityEngine;
 
 public class CharacterColor : MonoBehaviour
 {
+    [SerializeField]
+    Color _color = Color.white;
+    
+    [CreateProperty]
     public Color color
     {
         get => _color;
         set
         {
-            _color = color;
+            _color = value;
             SetColor();
         }
     }
-    [SerializeField]
-    Color _color = Color.white;
     
     public List<string> partNames = new List<string>
     {
