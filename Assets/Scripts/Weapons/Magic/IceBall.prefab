@@ -181,4 +181,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::IceFloor
   speed: 8
   floorDuration: 3
+  floorDmg: 3
   floorPrefab: {fileID: 5970982224548408227, guid: f5689fa4039a1a54392d1194637e43f6, type: 3}

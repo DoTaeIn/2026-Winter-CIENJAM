@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Blackhole
   speed: 8
-  duration: 10
+  duration: 3
   pullRadius: 3
-  pullForce: 5
-  damagePerSecond: 10
+  pullForce: 10
+  damagePerSecond: 4

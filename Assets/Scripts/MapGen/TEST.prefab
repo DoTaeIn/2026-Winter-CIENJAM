@@ -321,9 +321,9 @@ GameObject:
   - component: {fileID: 8312860110108917693}
   - component: {fileID: -6822161724019396449}
   - component: {fileID: -3996681621486493436}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TEST
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -508,7 +508,7 @@ MonoBehaviour:
   attackCooldown: 2
   attackWindup: 0.5
   attackDuration: 1
-  attackPoint: {fileID: 0}
+  attackPoint: {fileID: 4512885728688514557}
   attackRadius: 0.5
   frontCheck: {fileID: 2243796268779222280}
   wallCheck: {fileID: 4512885728688514557}
