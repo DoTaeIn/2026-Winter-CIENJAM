@@ -76,7 +76,7 @@ public class WeaponController : MonoBehaviour
     {
         if (currentWeapon != null)
         {
-            Destroy(currentWeapon);
+            //Destroy(currentWeapon);
         }
         currentWeapon = newWeapon;
 
