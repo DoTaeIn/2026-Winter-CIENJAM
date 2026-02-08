@@ -20,6 +20,6 @@ MonoBehaviour:
   hitboxSize: {x: 1, y: 1}
   offsetDistance: 1
   magicType: 0
-  spellPrefab: {fileID: 4480030739963785644, guid: 1d1419adc4dccac4caa4bf70eef7da73, type: 3}
+  spellPrefab: {fileID: 8477140689073943379, guid: e6f7949f612de3c428d80e250f9345ce, type: 3}
   manaCost: 10
   spellRange: 5
