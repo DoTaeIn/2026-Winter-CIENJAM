@@ -18,7 +18,7 @@ public class PotionEffect : ItemEffect
             if (targetPart != null)
             {
                 // [중요] 객체 자체가 아니라, 객체 안의 '이벤트'에 += 를 해야 합니다!
-                targetPart.OnPartRestore += heal; 
+                //targetPart.OnPartRestore += heal; 
             }
         }
     }

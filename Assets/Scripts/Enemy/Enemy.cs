@@ -2,8 +2,20 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IAnimatableCharacter
 {
+    public bool isFalling { get; private set; }
+    public float moveDirection { get; private set; }
+
+    public event Action OnJump;
+    public event Action OnLand;
+    public event Action<CharacterPartType> OnSwipeDown;
+    public event Action<CharacterPartType> OnSwipeUp;
+
+    public event Action<CharacterPartType> OnPartAttached;
+    public event Action<CharacterPartType> OnPartDetached;
+
+
     [Header("Enemy Settings")] 
     [SerializeField] private int gold = 10;
     [SerializeField] private float currHp = 10;
@@ -140,7 +152,7 @@ public class Enemy : MonoBehaviour
         
         if (currHp <= 0)
         {
-            // things to happen on death
+            onDeathEvent?.Invoke();
             return;
         }
         
@@ -154,6 +166,7 @@ public class Enemy : MonoBehaviour
         //Enable Particle System
         //Instantiate Gold Instance
         //player add "gold" variable
+        gameObject.SetActive(false);
     }
 
 }
