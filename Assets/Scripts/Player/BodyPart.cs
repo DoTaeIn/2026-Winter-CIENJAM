@@ -10,7 +10,7 @@ public class BodyPart : MonoBehaviour
     public BodyPartType partType; // � ��������
     float MaxHp = 40.0f;
     private float prevHp;
-    [SerializeField] private float currHp;
+    public float currHp;
     public bool isBroken;
 
     public event Action<BodyPartType> OnPartBroken;

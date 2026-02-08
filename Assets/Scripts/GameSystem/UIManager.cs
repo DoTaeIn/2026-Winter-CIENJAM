@@ -51,8 +51,6 @@ public class UIManager : MonoBehaviour
     {
         if (instance == null) instance = this;
         else Destroy(gameObject);
-        
-        
     }
     
     [SerializeField] private List<UIObj> UIs;
